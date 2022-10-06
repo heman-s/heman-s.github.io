@@ -126,7 +126,7 @@ html[page="interests"] .sticky {
 #title {
   float: left;
   font-size: 95px;
-  font-family: Geneva;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
   color: #515151;
   padding-top: 10px;
   padding-left: 15px;
