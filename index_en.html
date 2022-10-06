@@ -1,0 +1,278 @@
+<html page="home">
+<head>
+<title>Home</title>
+<link href="mystyle.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script src="email.js"></script>
+</head> 
+
+<body>
+
+<!-- HEADER -->
+<ul id="header">
+  <table id="headerTable">
+    <tr>
+      <td><li id="title">H<span class="smallerTitle">EMAN</span> S<span class="smallerTitle">EEGOLAM</span></li></td>
+    </tr>
+    <tr>
+      <td><li id="subsidiary">S<span class="smallerSubsidiary">OFTWARE</span> E<span class="smallerSubsidiary">NGINEER</span></li></td>
+    </tr>
+
+  <!-- MENU BUTTONS -->
+  <li><a href="interestsPage.html">Interests</a></li>
+  <li><a onclick="education()">Education</a></li>
+  <li><a onclick="myWork()">My Work</a></li>
+  <li><a href="index_en.html">Home</a></li>
+  <input id="darkModeButton" class="toggle" type="checkbox" onclick="darkMode()">
+  <label for="darkModeButton" class="sr">Dark Mode</label>
+  </table>
+</ul>
+
+<!-- PROFILE SUMMARY -->
+<table id="profileSummary">
+  <tr>
+    <th id="profileSummaryHeader">
+      <span class="fadeIn">Hi,</span> <span class="fadeIn">I'm</span> <span class="fadeIn">Heman.</span>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <img src="./assets/me.jpg" class="me">
+    </td>
+  </tr>
+  <tr>
+    <td class="profileSummaryContent">
+      I'm currently an undergraduate student in my second year at King's
+      College London.<br><br>
+      Put simply, I would define myself by an eagerness to grow and push myself out 
+      of my comfort zone to build up my skills.<br><br>
+      First and foremost, I work on my <span class="bold">confidence</span> 
+      every day as much as I can as well as my 
+      <span class="bold">communication</span> and 
+      <span class="bold">teamwork</span> through sports, social activities, 
+      competitions and other things.<br><br>
+      I aspire one day to live and either work or study in a country abroad for 
+      a <span class="fade">period of time to fully consolidate that confidence 
+      and create a level of </span><span class="moreText">
+      <span class="bold">independence</span> that I can later rely on.<br><br>
+      I work on my <span class="bold">organisation</span> and 
+      <span class="bold">knowledge</span> every day through my learning 
+      of the course I am currently enrolled in as well as through
+      providing private tutoring to an A-Level student in Computer Science.<br><br>
+      Whilst formerly participating in activities such as rugby and art, 
+      I am currently involved in playing basketball, dance, and learning 
+      to play the guitar.<br><br>
+      Now, I would like to further test and expand my boundaries 
+      by exploring the professional world of computer science and 
+      technology, where I will be able to put to use and improve my 
+      problem solving and algorithmic skills, beyond my own personal 
+      projects, to provide a impactful output into the real world.</span>
+      <input type="button" value="Show More >" class="showMoreButton" />
+    </td>
+  </tr>
+</table>
+
+<!-- PROJECTS SLIDESHOW -->
+<div align="center">
+  <div class="slider" id="slideshow">
+    <div class="slides">
+      <input type="radio" name="radioButton" id="radio1">
+      <input type="radio" name="radioButton" id="radio2">
+      <input type="radio" name="radioButton" id="radio3">
+      <input type="radio" name="radioButton" id="radio4">
+
+      <div class="mySlides first" id="slide1">
+        <img src="./assets/foodChainSimulator.png" style="width:65vw">
+      </div>
+
+      <div class="mySlides" id="slide2">
+        <img src="./assets/propertyViewer.png" style="width:65vw">
+      </div>
+
+      <div class="mySlides" id="slide3">
+        <img src="./assets/quiz.png" style="width:65vw">
+      </div>
+
+      <div class="mySlides" id="slide4">
+        <img src="./assets/zuul.png" style="width:65vw">
+      </div>
+    </div>
+
+    <div class="dotsContainer">
+      <div class="column">
+       <label for="radio1" class="manual-btn" id="button1" onclick="makeActive(1)"></label>
+      </div>
+      <div class="column">
+        <label for="radio2" class="manual-btn" onclick="makeActive(2)"></label>
+      </div>
+      <div class="column">
+        <label for="radio3" class="manual-btn" onclick="makeActive(3)"></label>
+      </div>
+      <div class="column">
+        <label for="radio4" class="manual-btn" onclick="makeActive(4)"></label>
+      </div>
+    </div>
+
+    <div id="pauseBtnDiv" class="pauseButton active" onclick="pauseAndStartSlideshow()">
+      <div class="pauseButtonBG" x="0" y="0" width="200" height="200"></div>
+      <div class="icon" width="200" height="200">
+        <div class="part left" x="0" y="0" width="200" height="200" fill="#fff"></div>
+        <div class="part right" x="0" y="0" width="200" height="200" fill="#fff"></div>
+      </div>
+      <div class="pointer"></div>
+    </div>
+
+    <div class="findOutMore">
+      <input type="button" value="Find Out More >" id="findOutMoreButton" onclick="on()"/>
+    </div>
+  </div>
+</div>
+
+<!-- POPUP OVERLAY FOR FIND OUT MORE BUTTON -->
+<div id="overlay">
+  <div id="popup">
+    <h3 class="popupHeader foodChainSimulator">Food Chain Simulator</h3>
+    <h3 class="popupHeader propertyViewer">Property Viewer</h3>
+    <h3 class="popupHeader quiz">Quiz Application</h3>
+    <h3 class="popupHeader zuul">World of Zuul</h3>
+    <h3 id="popupSubsidiary">Personal Project</h3>
+    <div id="repository">Repository</div>
+    <input type="button" value="X" id="xButton" onclick="off()"/>
+    <div id="popupLine"></div>
+
+    <div class="popupDescription foodChainSimulator">
+      <h3>Description:</h3>
+      <p>
+        In this Java Program, a simulation of six different species is represented, showing 
+        how they co-exist within an ecosystem, with some being prey and others being predators. Each 
+        species have corresponding activities for during the day and the night, and can be affected by
+        age, hunger, disease, weather and overcrowding. Each species is able to move and breed when certain 
+        conditions permit, may sleep at different times, may become infected or cured accordingly, may die
+        and provide a different food value for its predators. These figures are randomly generated, however,
+        include a bias to more accurately represent real life conditions.<br><br>Original Authors: 
+        David J. Barnes, Michael Kölling<br>Contributors: Heman Seegolam, Bhavik Gilbert
+        
+      </p>
+      <img class="descImageJava" src="./assets/java.jpg">
+      <a href="./assets/Food Chain Simulation Report.pdf" target="_blank">
+        <div id="report" style="transform: translate3d(33vw, -59.1vh, 0)">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Report</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="popupDescription propertyViewer">
+      <h3>Description:</h3>
+      <p>
+        The property viewer application displays 4 distinct panels which each give insight into the London 
+        Property Marketplace. The user can select a preferred price range using a rangeslider (or use the
+        default range already set), which allows them to view properties on map that displays a boroughs 
+        corresponding, available properties. There is a statistics panel that provides statistical information
+        on properties that fall within the chosen price range, and also a favourites panel that displays the 
+        properties which have been favourited by the user. The GUI has various, additional features such 
+        as a menubar, an overall price calculator, a property selection scroll pane, the ability to display 
+        the location of each property on OpenStreetMaps, a search bar for distinct values of each property, 
+        as well as a darkmode-lightmode implementation and a Weather API.<br><br>Original Authors: 
+        David J. Barnes, Michael Kölling<br>Contributors: Heman Seegolam, Bhavik Gilbert, Nina Peire, 
+        Lavish Kumar
+      </p>
+      <img class="descImageJava" src="./assets/java.jpg" style="transform: translate3d(0, 0, 0)">
+      <a href="./assets/Property Viewer Report.pdf" target="_blank">
+        <div id="report" style="transform: translate3d(33vw, -63.9vh, 0)">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Report</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="popupDescription quiz">
+      <h3>Description:</h3>
+      <p>In this Python application, users can log in and sign up as a teacher, parent or student. Logins
+        are checked against a hashed database to verify credentials and sign ups must be verified by teachers.
+        Teachers are able to create quizzes - featuring various question types and other options, play quizzes,
+        view classes and students and monitor their progress. Students are able to play quizzes created by the
+        teacher or play quizzes that have been pre-created (where questions will be randomised and solved by
+        using a corresponding equation for the question). Parents are able to monitor the progress of their 
+        children.<br><br>Original Authors: Heman Seegolam
+      </p>
+      <img class="descImagePython" src="./assets/python.png">
+      <img class="descImageSQL" src="./assets/sql.png">
+      <a href="./assets/Quiz Report.pdf" target="_blank">
+        <div id="report" style="transform: translate3d(33vw, -51.5vh, 0)">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Report</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="popupDescription zuul">
+      <h3>Description:</h3>
+      <p>In this Java text-based, role-play game, the user is trapped in a nightmare, and is required to 
+        move between several locations, use and carry different items, interact with non-player characters, 
+        to solve clues and ultimately escape. The user is faced with riddles and must find different keys and
+        codes to unlock various items which shall help them escape. Different items perform different tasks
+        and each location incorporates different scenarios and clues that may have to be used across rooms.
+        <br><br>Original Authors: David J. Barnes, Michael Kölling<br>Contributors: Heman Seegolam
+      </p>
+      <img class="descImageJava" src="./assets/java.jpg" style="transform: translate3d(0, 7vh, 0)">
+      <a href="./assets/World of Zuul Report.pdf" target="_blank">
+        <div id="report" style="transform: translate3d(33vw, -54.2vh, 0)">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Report</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT FORM -->
+<div class="formLine" style="transform: translate3d(-0.5vw, -8vh, 0)"></div>
+<div id="contactFormDiv">
+  <h3 style="font-size:30px">Get In Touch</h3>
+  <p style="opacity:0.4; padding-bottom: 2%;">Fill out the contact form below and I'll get back to you soon.</p>
+  <form id="contactForm" onsubmit="return false">
+    <input type="hidden" name="contact_number">
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name"><br><br>
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email" placeholder="Enter Your Email"><br><br>
+    <label for="message">Message</label><br>
+    <textarea type="text" id="message" name="message" placeholder="Enter Your Message" style="height:20%; word-wrap: break-word;"></textarea><br><br>
+    <input type="submit" id="submitButton" value="Send Message">
+  </form>
+</div>
+
+<!-- ANIMATION TEST -->
+<!-- <div class="section bg1">
+  <h1 class="revealUp">Animation 1</h1>
+</div>
+
+<div class="section bg2">
+  <h1 class="revealUp">Animation 2</h1>
+</div> -->
+
+
+<!-- FOOTER -->
+<div class="footer">
+  <p id="copyright">© 2022 Heman Seegolam. All Rights Reserved.</p>
+  <div class="dropdown">
+    <button onclick="dropdown()" class="dropdownButton">
+      <img src="./assets/uk.png" id="ukLogo"/>
+      United Kingdom ⌄
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index_fr.html">
+        <img src="./assets/france.png" id="franceLogo"/>
+        France
+      </a>
+    </div>
+  </div>
+  <input type="button" id="goToTopButton" value="Go To Top">
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

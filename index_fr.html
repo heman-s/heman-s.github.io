@@ -1,0 +1,284 @@
+<html page="home">
+<head>
+<title>Home</title>
+<link href="mystyle.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script src="email.js"></script>
+</head> 
+
+<body>
+
+<!-- HEADER -->
+<ul id="header">
+  <table id="headerTable">
+    <tr>
+      <td><li id="title">H<span class="smallerTitle">EMAN</span> S<span class="smallerTitle">EEGOLAM</span></li></td>
+    </tr>
+    <tr>
+      <td><li id="subsidiary">I<span class="smallerSubsidiary">NGÉNIEUR</span> L<span class="smallerSubsidiary">OGICIEL</span></li></td>
+    </tr>
+
+  <!-- MENU BUTTONS -->
+  <li><a href="interestsPage.html">Intérēts</a></li>
+  <li><a onclick="education()">Éducation</a></li>
+  <li><a onclick="myWork()">Mes Projets</a></li>
+  <li><a href="index_fr.html">Accueil</a></li>
+  <input id="darkModeButton" class="toggle" type="checkbox" onclick="darkMode()">
+  <label for="darkModeButton" class="sr">Dark Mode</label>
+  </table>
+</ul>
+
+<!-- PROFILE SUMMARY -->
+<table id="profileSummary" style="width:70vw">
+  <tr>
+    <th id="profileSummaryHeader">
+      <span class="fadeIn">Salut,</span> <span class="fadeIn">Je</span> <span class="fadeIn">Suis</span> <span class="fadeIn">Heman.</span>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <img src="./assets/me.jpg" class="me">
+    </td>
+  </tr>
+  <tr>
+    <td class="profileSummaryContent">
+      Je suis actuellement un étudiant de l'informatique de deuxième année à King's College London.<br><br>
+      Tout simplement, je me définerais par un désir de me grandir et me donner à fond dehors de ma
+      zone de confort pour développer mes compétences.<br><br>
+
+      Tout d'abord, je travaille sur ma <span class="bold">confiance</span> tous les jours autant
+      que je peux, ainsi que ma <span class="bold">communication</span> et 
+      <span class="bold">travail d'équipe</span> à travers des sports, les interactions sociales,
+      les compétitions entre autres choses.<br><br>
+
+      J'aspire un jour à vivre et soit travailler soit étudier à l'étranger pour une 
+      période de temps <span class="fade">pour consolider sa confiance au maximum et créer un 
+        niveau </span><span class="moreText"><span class="bold">d'indépendance</span>
+       que je peut-ētre fier.<br><br>
+
+      Je toujours travaille sur ma <span class="bold">organisation</span> et mes
+      <span class="bold">conaissances</span> à travers de mon cours à l'université et également 
+      en fournissant des cours particuliers à un étudiant de bac sur l'informatique.<br><br>
+
+      Précédemment, j'ai participé dans les activities telle que le rugby et les arts, en ce moment
+      je suis impliqué dans le basket, la danse et l'apprenstissage de la guitare.<br><br>
+
+      Á present, je voudrais plus tester et étendre mes limites en explorant le monde professionel de 
+      l'informatique et la technologie, où je pourrais mettre à profit et améliorer mes competences
+      à résoudre des problèmes et algorithmique, au-delà de mes propres projets personnels, pour fournir
+      un output percutant dans le monde réel.</span>
+      <input type="button" value="Voir Plus >" class="showMoreButton"/>
+    </td>
+  </tr>
+</table>
+
+<!-- PROJECTS SLIDESHOW -->
+<div align="center">
+  <div class="slider" id="slideshow">
+    <div class="slides">
+      <input type="radio" name="radioButton" id="radio1">
+      <input type="radio" name="radioButton" id="radio2">
+      <input type="radio" name="radioButton" id="radio3">
+      <input type="radio" name="radioButton" id="radio4">
+
+      <div class="mySlides first" id="slide1">
+        <img src="./assets/foodChainSimulator.png" style="width:65vw">
+      </div>
+
+      <div class="mySlides" id="slide2">
+        <img src="./assets/propertyViewer.png" style="width:65vw">
+      </div>
+
+      <div class="mySlides" id="slide3">
+        <img src="./assets/quiz.png" style="width:65vw">
+      </div>
+
+      <div class="mySlides" id="slide4">
+        <img src="./assets/zuul.png" style="width:65vw">
+      </div>
+    </div>
+
+    <div class="dotsContainer">
+      <div class="column">
+       <label for="radio1" class="manual-btn" id="button1" onclick="makeActive(1)"></label>
+      </div>
+      <div class="column">
+        <label for="radio2" class="manual-btn" onclick="makeActive(2)"></label>
+      </div>
+      <div class="column">
+        <label for="radio3" class="manual-btn" onclick="makeActive(3)"></label>
+      </div>
+      <div class="column">
+        <label for="radio4" class="manual-btn" onclick="makeActive(4)"></label>
+      </div>
+    </div>
+
+    <div id="pauseBtnDiv" class="pauseButton active" onclick="pauseAndStartSlideshow()">
+      <div class="pauseButtonBG" x="0" y="0" width="200" height="200"></div>
+      <div class="icon" width="200" height="200">
+        <div class="part left" x="0" y="0" width="200" height="200" fill="#fff"></div>
+        <div class="part right" x="0" y="0" width="200" height="200" fill="#fff"></div>
+      </div>
+      <div class="pointer"></div>
+    </div>
+
+    <div class="findOutMore">
+      <input type="button" value="Découvrir >" id="findOutMoreButton" onclick="on()"/>
+    </div>
+  </div>
+</div>
+
+<!-- POPUP OVERLAY FOR FIND OUT MORE BUTTON -->
+<div id="overlay">
+  <div id="popup">
+    <h3 class="popupHeader foodChainSimulator">Simulateur de Chaîne Alimentaire</h3>
+    <h3 class="popupHeader propertyViewer">Visionneuse des Propriétés</h3>
+    <h3 class="popupHeader quiz">Application de Quiz</h3>
+    <h3 class="popupHeader zuul">Monde de Zuul</h3>
+    <h3 id="popupSubsidiary">Projet Personnel</h3>
+    <div id="repository">Référentiel</div>
+    <input type="button" value="X" id="xButton" onclick="off()"/>
+    <div id="popupLine"></div>
+
+    <div class="popupDescription foodChainSimulator">
+      <h3>Description:</h3>
+      <p>
+        In this Java Program, a simulation of six different species is represented, showing 
+        how they co-exist within an ecosystem, with some being prey and others being predators. Each 
+        species have corresponding activities for during the day and the night, and can be affected by
+        age, hunger, disease, weather and overcrowding. Each species is able to move and breed when certain 
+        conditions permit, may sleep at different times, may become infected or cured accordingly, may die
+        and provide a different food value for its predators. These figures are randomly generated, however,
+        include a bias to more accurately represent real life conditions.<br><br>Auteurs Originals: 
+        David J. Barnes, Michael Kölling<br>Contributeurs: Heman Seegolam, Bhavik Gilbert
+
+        Dans cette application de Java, on représente une simulation de six espèces differentes que montre
+        comment ils coexistent dans un écosystème, où certains espèces sont des prédateurs et les autres sont
+        des proies. Chaque espèce a des activités correspondant pour la journée et pour la nuit, et peut ētre
+        affecté par l'âge, la faim, la maladie, la météo et le surpeuplement. Chaque espèce est capable de
+        se déplacer et se reproduire quand les conditions les permettent. 
+        
+      </p>
+      <img class="descImageJava" src="./assets/java.jpg">
+      <a href="./assets/Food Chain Simulation Report.pdf" target="_blank">
+        <div id="report" style="transform: translate3d(33vw, -59.1vh, 0)">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Rapport</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="popupDescription propertyViewer">
+      <h3>Description:</h3>
+      <p>
+        The property viewer application displays 4 distinct panels which each give insight into the London 
+        Property Marketplace. The user can select a preferred price range using a rangeslider (or use the
+        default range already set), which allows them to view properties on map that displays a boroughs 
+        corresponding, available properties. There is a statistics panel that provides statistical information
+        on properties that fall within the chosen price range, and also a favourites panel that displays the 
+        properties which have been favourited by the user. The GUI has various, additional features such 
+        as a menubar, an overall price calculator, a property selection scroll pane, the ability to display 
+        the location of each property on OpenStreetMaps, a search bar for distinct values of each property, 
+        as well as a darkmode-lightmode implementation and a Weather API.<br><br>Auteurs Originals: 
+        David J. Barnes, Michael Kölling<br>Contributeurs: Heman Seegolam, Bhavik Gilbert, Nina Peire, 
+        Lavish Kumar
+      </p>
+      <img class="descImageJava" src="./assets/java.jpg" style="transform: translate3d(0, 0, 0)">
+      <a href="./assets/Property Viewer Report.pdf" target="_blank">
+        <div id="report" style="transform: translate3d(33vw, -63.9vh, 0)">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Rapport</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="popupDescription quiz">
+      <h3>Description:</h3>
+      <p>In this Python application, users can log in and sign up as a teacher, parent or student. Logins
+        are checked against a hashed database to verify credentials and sign ups must be verified by teachers.
+        Teachers are able to create quizzes - featuring various question types and other options, play quizzes,
+        view classes and students and monitor their progress. Students are able to play quizzes created by the
+        teacher or play quizzes that have been pre-created (where questions will be randomised and solved by
+        using a corresponding equation for the question). Parents are able to monitor the progress of their 
+        children.<br><br>Auteurs Originals: Heman Seegolam
+      </p>
+      <img class="descImagePython" src="./assets/python.png">
+      <img class="descImageSQL" src="./assets/sql.png">
+      <a href="./assets/Quiz Report.pdf" target="_blank">
+        <div id="report" style="transform: translate3d(33vw, -51.5vh, 0)">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Rapport</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="popupDescription zuul">
+      <h3>Description:</h3>
+      <p>In this Java text-based, role-play game, the user is trapped in a nightmare, and is required to 
+        move between several locations, use and carry different items, interact with non-player characters, 
+        to solve clues and ultimately escape. The user is faced with riddles and must find different keys and
+        codes to unlock various items which shall help them escape. Different items perform different tasks
+        and each location incorporates different scenarios and clues that may have to be used across rooms.
+        <br><br>Auteurs Originals: David J. Barnes, Michael Kölling<br>Contributeurs: Heman Seegolam
+      </p>
+      <img class="descImageJava" src="./assets/java.jpg" style="transform: translate3d(0, 7vh, 0)">
+      <a href="./assets/World of Zuul Report.pdf" target="_blank">
+        <div id="report" style="transform: translate3d(33vw, -54.2vh, 0)">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Rapport</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT FORM -->
+<div class="formLine" style="transform: translate3d(-0.5vw, -8vh, 0)"></div>
+<div id="contactFormDiv">
+  <h3 style="font-size:30px">Entrer en contact avec moi</h3>
+  <p style="opacity:0.4; padding-bottom: 2%;">Remplissez le formulaire de contact dessous et je vous rappelle bientôt.</p>
+  <form id="contactForm" onsubmit="return false">
+    <input type="hidden" name="contact_number">
+    <label for="name">Nom</label><br>
+    <input type="text" id="name" name="name" placeholder="Écrivez Votre Nom"><br><br>
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email" placeholder="Écrivez Votre Email"><br><br>
+    <label for="message">Message</label><br>
+    <textarea type="text" id="message" name="message" placeholder="Écrivez Votre Message" style="height:20%; word-wrap: break-word;"></textarea><br><br>
+    <input type="submit" id="submitButton" value="Envoye Message">
+  </form>
+</div>
+
+<!-- ANIMATION TEST -->
+<!-- <div class="section bg1">
+  <h1 class="revealUp">Animation 1</h1>
+</div>
+
+<div class="section bg2">
+  <h1 class="revealUp">Animation 2</h1>
+</div> -->
+
+
+<!-- FOOTER -->
+<div class="footer">
+  <p id="copyright">© 2022 Heman Seegolam. Tous Droits Réservés.</p>
+  <div class="dropdown">
+    <button onclick="dropdown()" class="dropdownButton">
+      <img src="./assets/france.png" id="franceLogo"/>
+      La France ⌄
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index_en.html">
+        <img src="./assets/uk.png" id="ukLogo"/>
+        Le Royaume-Uni
+      </a>
+    </div>
+  </div>
+  <input type="button" id="goToTopButton" value="Reviens En Haut">
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
