@@ -23,7 +23,7 @@ function darkMode() {
 function myWork(){
   var slideshow = document.getElementById("slideshow");
   document.documentElement.scrollTop = slideshow.offsetTop;
-  document.body.scrollTop = slideshow.offsetTop;
+  document.body.scrollTop = slideshow.offsetTop-85;
 }
 
 // SHOW MORE BUTTON
@@ -136,4 +136,10 @@ function off() {
   if(!(pauseButton.classList.contains('active'))){
     pauseAndStartSlideshow();
   }
+}
+
+// GO TO TOP BUTTON
+function goToTop(){
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
