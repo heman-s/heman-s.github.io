@@ -15,7 +15,7 @@
   
     <!-- MENU BUTTONS -->
     <li><a style="color: white;" href="interestsPage.html">Interests</a></li>
-    <li><a style="color: white;" onclick="education()">Education</a></li>
+    <li><a style="color: white;" href="./assets/CV.pdf" target="_blank">CV</a></li>
     <li><a style="color: white;" onclick="myWork()">My Work</a></li>
     <li><a style="color: white;" href="index.html">Home</a></li>
     <input id="darkModeButton" class="toggle" type="checkbox" onclick="darkMode()">
@@ -84,9 +84,7 @@
   </div>
 </div>
 
-<div class="bgimg-5">
-  <!-- <img src="./assets/art1.jpg" style="width:100vw"> -->
-</div>
+<div class="bgimg-5"></div>
 
 <div>
   <div class="section1">
@@ -97,19 +95,23 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- FOOTER -->
+<div class="footer">
+  <p id="copyright">© 2022 Heman Seegolam. All Rights Reserved.</p>
+  <div class="dropdown">
+    <button onclick="dropdown()" class="dropdownButton">
+      <img src="./assets/uk.png" id="ukLogo"/>
+      United Kingdom ⌄
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a>
+        <img src="./assets/france.png" id="franceLogo"/>
+        France
+      </a>
+    </div>
+  </div>
+  <input type="button" id="goToTopButton" value="Go To Top" onclick="goToTop()">
+</div>
 
 <script src="main.js"></script>
 </body>
