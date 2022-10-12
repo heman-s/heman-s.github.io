@@ -102,7 +102,9 @@ table#headerTable, th, td {
   position: fixed;
   list-style-type: none;
   width: 100vw;
-  transform: translate3d(-2.5vw, -3vh, 0);
+  /* transform: translate3d(-2.5vw, -3vh, 0); */
+  margin-top: -0.5vh;
+  margin-left: -2.5vw;
   overflow: hidden;
   transition: 2s;
   z-index: 2;

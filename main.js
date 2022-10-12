@@ -6,7 +6,7 @@ var header2 = document.getElementById("header2");
 var sticky = header.offsetTop;
 
 function stickyHeader() {
-  if (window.pageYOffset > sticky) {
+  if (window.pageYOffset-5 > sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
