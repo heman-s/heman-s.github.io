@@ -14,9 +14,33 @@ function stickyHeader() {
 }
 
 // DARK MODE
-function darkMode() {
-  var element = document.body;
-  element.classList.toggle("darkMode");
+var checkbox = document.querySelector("input[name=darkModeButton]");
+
+    checkbox.addEventListener("change", function () {
+    localStorage.setItem("theme", this.checked);
+    trans()
+    if (this.checked) {
+        document.documentElement.setAttribute("theme", "dark");
+    } else {
+         document.documentElement.setAttribute("theme", "light");
+    }
+});
+
+let trans = () => {
+    document.documentElement.classList.add("transition");
+    window.setTimeout(() => {
+        document.documentElement.classList.remove("transition");
+    }, 1000)
+};
+
+if (localStorage.getItem("theme") == "false") {
+  document.documentElement.setAttribute("theme", "light");
+  var check = document.getElementById("darkModeButton");
+}
+else {
+  document.documentElement.setAttribute("theme", "dark");
+  var check = document.getElementById("darkModeButton");
+  check.setAttribute("checked", "checked");
 }
 
 // MENU BUTTONS
