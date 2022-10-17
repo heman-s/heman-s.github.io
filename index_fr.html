@@ -1,4 +1,4 @@
-<html page="home">
+<html page="home" theme="light">
 <head>
 <title>Home</title>
 <link href="mystyle.css" rel="stylesheet">
@@ -23,7 +23,7 @@
   <li><a href="./assets/CV.pdf" target="_blank">CV</a></li>
   <li><a onclick="myWork()">Mes Projets</a></li>
   <li><a href="index_fr.html">Accueil</a></li>
-  <input id="darkModeButton" class="toggle" type="checkbox" onclick="darkMode()">
+  <input id="darkModeButton" name="darkModeButton" class="toggle" type="checkbox">
   <label for="darkModeButton" class="sr">Dark Mode</label>
   </table>
 </ul>
@@ -68,8 +68,6 @@
       ainsi que ma capacité à résoudre de problèmes. Au-delà de mes propres projets personnels, 
       je voudrais utiliser ces compétences pour fournir un produit percutant au monde.</span> 
 
-
-      
       <input type="button" value="Voir Plus >" class="showMoreButton"/>
     </td>
   </tr>
@@ -134,7 +132,7 @@
 <!-- POPUP OVERLAY FOR FIND OUT MORE BUTTON -->
 <div id="overlay">
   <div id="popup">
-    <h3 class="popupHeader foodChainSimulator">Simulateur de Chaîne Alimentaire</h3>
+    <h3 class="popupHeader foodChainSimulator" style="font-size:1.7vw">Simulateur de Chaîne Alimentaire</h3>
     <h3 class="popupHeader propertyViewer">Visionneuse des Propriétés</h3>
     <h3 class="popupHeader quiz">Application de Quiz</h3>
     <h3 class="popupHeader zuul">Monde de Zuul</h3>
@@ -156,7 +154,7 @@
         <br><br>Auteurs Originals: David J. Barnes, Michael Kölling
         <br>Contributeurs: Heman Seegolam, Bhavik Gilbert
       </p>
-      <img class="descImageJava" src="./assets/java.jpg" style="transform: translate3d(0, 0, 0)">
+      <img class="descImageJava" src="./assets/java.png" style="transform: translate3d(0, 0, 0)">
       <a href="./assets/Food Chain Simulation Report.pdf" target="_blank">
         <div id="report" style="transform: translate3d(41vw, -62vh, 0)">
           <img src="./assets/externalLink.png" id="reportExternalLink"></img>
@@ -182,7 +180,7 @@
         <br><br>Auteurs Originals: David J. Barnes, Michael Kölling
         <br>Contributeurs: Heman Seegolam, Bhavik Gilbert, Nina Peire, Lavish Kumar
       </p>
-      <img class="descImageJava" src="./assets/java.jpg" style="transform: translate3d(0, -1.4vh, 0)">
+      <img class="descImageJava" src="./assets/java.png" style="transform: translate3d(0, -1.4vh, 0)">
       <a href="./assets/Property Viewer Report.pdf" target="_blank">
         <div id="report" style="transform: translate3d(41vw, -66.2vh, 0)">
           <img src="./assets/externalLink.png" id="reportExternalLink"></img>
@@ -205,7 +203,7 @@
         <br><br>Auteurs Originals: Heman Seegolam
       </p>
       <img class="descImagePython" src="./assets/python.png" style="transform: translate3d(0, 6vh, 0)">
-      <img class="descImageSQL" src="./assets/sql.png" style="transform: translate3d(0, 6vh, 0)">
+      <img class="descImageSQL" src="./assets/sql.png" style="transform: translate3d(1vw, 6vh, 0)">
       <a href="./assets/Quiz Report.pdf" target="_blank">
         <div id="report" style="transform: translate3d(33vw, -54vh, 0)">
           <img src="./assets/externalLink.png" id="reportExternalLink"></img>
@@ -231,7 +229,7 @@
         différents qui peuvent être utilisés à travers des chambres.
         <br><br>Auteurs Originals: David J. Barnes, Michael Kölling<br>Contributeurs: Heman Seegolam
       </p>
-      <img class="descImageJava" src="./assets/java.jpg" style="transform: translate3d(0, 4vh, 0)">
+      <img class="descImageJava" src="./assets/java.png" style="transform: translate3d(0, 4vh, 0)">
       <a href="./assets/World of Zuul Report.pdf" target="_blank">
         <div id="report" style="transform: translate3d(41vw, -57.2vh, 0)">
           <img src="./assets/externalLink.png" id="reportExternalLink"></img>
@@ -259,15 +257,6 @@
   </form>
 </div>
 
-<!-- ANIMATION TEST -->
-<!-- <div class="section bg1">
-  <h1 class="revealUp">Animation 1</h1>
-</div>
-
-<div class="section bg2">
-  <h1 class="revealUp">Animation 2</h1>
-</div> -->
-
 
 <!-- FOOTER -->
 <div class="footer">
@@ -286,7 +275,6 @@
   </div>
   <input type="button" id="goToTopButton" value="Revenir En Haut" onclick="goToTop()" style="transform:translate3d(4vw,0,0)">
 </div>
-
 
 
 <script src="main.js"></script>
