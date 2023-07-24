@@ -236,9 +236,9 @@
 <!-- CONTACT FORM -->
 <div class="formLine" style="transform: translate3d(-0.5vw, -8vh, 0)"></div>
 <div id="contactFormDiv">
-  <h3 style="font-size:30px">Get In Touch</h3>
-  <p style="opacity:0.4; padding-bottom: 2%;">Fill out the contact form below and I'll get back to you soon.</p>
-  <form id="contactForm" onsubmit="return false">
+  <h3 class="animated animatedFadeInUp fadeInUp" style="font-size:30px; animation-delay: 5.5s">Get In Touch</h3>
+  <p class="animated animatedFadeInUp fadeInUp" style="color:gray; padding-bottom: 2%; animation-delay: 6s">Fill out the contact form below and I'll get back to you soon.</p>
+  <form class="animated animatedFadeInUp fadeInUp" style="animation-delay: 6.5s" id="contactForm" onsubmit="return false">
     <input type="hidden" name="contact_number">
     <label for="name">Name</label><br>
     <input type="text" id="name" name="name" placeholder="Enter Your Name"><br><br>
@@ -250,21 +250,11 @@
   </form>
 </div>
 
-<!-- ANIMATION TEST -->
-<!-- <div class="section bg1">
-  <h1 class="revealUp">Animation 1</h1>
-</div>
-
-<div class="section bg2">
-  <h1 class="revealUp">Animation 2</h1>
-</div> -->
-
-
 <!-- FOOTER -->
 <div class="footer">
-  <p id="copyright">© 2022 Heman Seegolam. All Rights Reserved.</p>
+  <p class="animated animatedFadeInUp fadeInUp" id="copyright">© 2022 Heman Seegolam. All Rights Reserved.</p>
   <div class="dropdown">
-    <button onclick="dropdown()" class="dropdownButton">
+    <button onclick="dropdown()" class="dropdownButton animated animatedFadeInUp fadeInUp" style="animation-delay: 0.5s;">
       <img src="./assets/uk.png" id="ukLogo"/>
       United Kingdom ⌄
     </button>
@@ -275,7 +265,7 @@
       </a>
     </div>
   </div>
-  <input type="button" id="goToTopButton" value="Go To Top" onclick="goToTop()">
+  <input type="button" class="animated animatedFadeInUp fadeInUp" style="animation-delay: 0.5s;" id="goToTopButton" value="Go To Top" onclick="goToTop()">
 </div>
 
 
