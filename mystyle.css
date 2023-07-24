@@ -1092,6 +1092,7 @@ html[page="interests"] .footer {
   border: none;
   cursor: pointer;
   margin-top: -5.4vh;
+  margin-right: 5.4vh;
   float: right;
   position: relative;
   color: var(--text);

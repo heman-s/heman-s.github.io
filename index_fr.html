@@ -12,17 +12,17 @@
 <ul id="header">
   <table id="headerTable">
     <tr>
-      <td><li id="title">H<span class="smallerTitle">EMAN</span> S<span class="smallerTitle">EEGOLAM</span></li></td>
+      <td class="animated animatedFadeInUp fadeInRight"><li id="title">H<span class="smallerTitle">EMAN</span> S<span class="smallerTitle">EEGOLAM</span></li></td>
     </tr>
     <tr>
-      <td><li id="subsidiary">I<span class="smallerSubsidiary">NGÉNIEUR EN</span> L<span class="smallerSubsidiary">OGICIEL</span></li></td>
+      <td class="animated animatedFadeInUp fadeInRight" style="animation-delay: 0.5s"><li id="subsidiary">I<span class="smallerSubsidiary">NGÉNIEUR EN</span> L<span class="smallerSubsidiary">OGICIEL</span></li></td>
     </tr>
 
   <!-- MENU BUTTONS -->
-  <li><a href="interestsPage.html">Intérēts</a></li>
-  <li><a href="./assets/CV.pdf" target="_blank">CV</a></li>
-  <li><a onclick="myWork()">Mes Projets</a></li>
-  <li><a href="index_fr.html">Accueil</a></li>
+  <li class="animated animatedFadeInUp fadeInLeft" style="animation-delay: 1s"><a href="interestsPage.html">Intérēts</a></li>
+  <li class="animated animatedFadeInUp fadeInLeft" style="animation-delay: 1.5s"><a href="./assets/CV.pdf" target="_blank">CV</a></li>
+  <li class="animated animatedFadeInUp fadeInLeft" style="animation-delay: 2s"><a onclick="myWork()">Mes Projets</a></li>
+  <li class="animated animatedFadeInUp fadeInLeft" style="animation-delay: 2.5s"><a href="index.html">Accueil</a></li>
   <input id="darkModeButton" name="darkModeButton" class="toggle" type="checkbox">
   <label for="darkModeButton" class="sr">Dark Mode</label>
   </table>
@@ -32,16 +32,16 @@
 <table id="profileSummary" style="width:70vw">
   <tr>
     <th id="profileSummaryHeader">
-      <span class="fadeIn">Salut,</span> <span class="fadeIn">Je</span> <span class="fadeIn">Suis</span> <span class="fadeIn">Heman.</span>
+      <span class="fadeIn" style="animation-delay: 3s">Salut,</span> <span class="fadeIn" style="animation-delay: 3s">Je</span> <span class="fadeIn" style="animation-delay: 3s">Suis</span> <span class="fadeIn" style="animation-delay: 3s">Heman.</span>
     </th>
   </tr>
   <tr>
     <td>
-      <img src="./assets/me.jpg" class="me">
+      <img src="./assets/me.jpg" class="me animated animatedFadeInUp fadeInUp" style="animation-delay: 4s">
     </td>
   </tr>
   <tr>
-    <td class="profileSummaryContent">
+    <td class="profileSummaryContent animated animatedFadeInUp fadeInUp" style="animation-delay: 4.5s">
       Je suis actuellement étudiant en deuxième année d'informatique à la faculté de King's College London.<br><br>
       
       Je me caractérise, entre autres, par mon ardeur et ma ténacité. Je suis une personne vigoureuse qui
@@ -75,7 +75,7 @@
 
 <!-- PROJECTS SLIDESHOW -->
 <div align="center">
-  <div class="slider" id="slideshow">
+  <div class="slider animated animatedFadeInUp fadeInUp" style="animation-delay: 5s" id="slideshow">
     <div class="slides">
       <input type="radio" name="radioButton" id="radio1">
       <input type="radio" name="radioButton" id="radio2">
@@ -131,7 +131,7 @@
 
 <!-- POPUP OVERLAY FOR FIND OUT MORE BUTTON -->
 <div id="overlay">
-  <div id="popup">
+  <div class="animated animatedFadeInUp fadeInUp" id="popup">
     <h3 class="popupHeader foodChainSimulator" style="font-size:1.7vw">Simulateur de Chaîne Alimentaire</h3>
     <h3 class="popupHeader propertyViewer">Visionneuse des Propriétés</h3>
     <h3 class="popupHeader quiz">Application de Quiz</h3>
@@ -243,9 +243,9 @@
 <!-- CONTACT FORM -->
 <div class="formLine" style="transform: translate3d(-0.5vw, -8vh, 0)"></div>
 <div id="contactFormDiv">
-  <h3 style="font-size:30px">Pour entrer en contact avec moi</h3>
-  <p style="opacity:0.4; padding-bottom: 2%;">Remplissez le formulaire de contact ci-dessous et je vous rappellerai bientôt.</p>
-  <form id="contactForm" onsubmit="return false">
+  <h3 class="animated animatedFadeInUp fadeInUp" style="font-size:30px; animation-delay: 5.5s">Pour entrer en contact avec moi</h3>
+  <p class="animated animatedFadeInUp fadeInUp" style="color:gray; padding-bottom: 2%; animation-delay: 6s">Remplissez le formulaire de contact ci-dessous et je vous rappellerai bientôt.</p>
+  <form class="animated animatedFadeInUp fadeInUp" style="animation-delay: 6.5s" id="contactForm" onsubmit="return false">
     <input type="hidden" name="contact_number">
     <label for="name">Nom</label><br>
     <input type="text" id="name" name="name" placeholder="Écrivez Votre Nom"><br><br>
@@ -257,24 +257,24 @@
   </form>
 </div>
 
-
 <!-- FOOTER -->
 <div class="footer">
-  <p id="copyright">© 2022 Heman Seegolam. Tous Droits Réservés.</p>
+  <p class="animated animatedFadeInUp fadeInUp" id="copyright">© 2022 Heman Seegolam. Tous Droits Réservés.</p>
   <div class="dropdown">
-    <button onclick="dropdown()" class="dropdownButton">
+    <button onclick="dropdown()" class="dropdownButton animated animatedFadeInUp fadeInUp" style="animation-delay: 0.5s;">
       <img src="./assets/france.png" id="franceLogo"/>
-      La France ⌄
+      Français ⌄
     </button>
     <div id="myDropdown" class="dropdown-content">
       <a href="index.html">
         <img src="./assets/uk.png" id="ukLogo"/>
-        Le Royaume-Uni
+        Anglais
       </a>
     </div>
   </div>
-  <input type="button" id="goToTopButton" value="Revenir En Haut" onclick="goToTop()" style="transform:translate3d(4vw,0,0)">
+  <input type="button" class="animated animatedFadeInUp fadeInUp" style="animation-delay: 0.5s;" id="goToTopButton" value="Revenir En Haut" onclick="goToTop()">
 </div>
+
 
 
 <script src="main.js"></script>
