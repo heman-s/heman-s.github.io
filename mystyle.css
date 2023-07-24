@@ -31,7 +31,7 @@ html[theme="dark"] body {
 /* FADE IN ANIMATIONS */
 @keyframes fadeInUp {
   from {
-      transform: translate3d(0,50px,0)
+      transform: translate3d(0,5vw,0)
   }
 
   to {
@@ -42,7 +42,7 @@ html[theme="dark"] body {
 
 @-webkit-keyframes fadeInUp {
   from {
-      transform: translate3d(0,50px,0)
+      transform: translate3d(0,5vw,0)
   }
 
   to {
@@ -53,7 +53,7 @@ html[theme="dark"] body {
 
 @keyframes fadeInRight {
   from {
-      transform: translate3d(-50px,0,0)
+      transform: translate3d(-5vw,0,0)
   }
 
   to {
@@ -64,7 +64,7 @@ html[theme="dark"] body {
 
 @-webkit-keyframes fadeInRight {
   from {
-      transform: translate3d(-50px,0,0)
+      transform: translate3d(-5vw,0,0)
   }
 
   to {
@@ -75,7 +75,7 @@ html[theme="dark"] body {
 
 @keyframes fadeInLeft {
   from {
-      transform: translate3d(50px,0,0)
+      transform: translate3d(5vw,0,0)
   }
 
   to {
@@ -86,7 +86,7 @@ html[theme="dark"] body {
 
 @-webkit-keyframes fadeInLeft {
   from {
-      transform: translate3d(50px,0,0)
+      transform: translate3d(5vw,0,0)
   }
 
   to {
@@ -876,10 +876,10 @@ html[theme="dark"] .manual-btn {
 
 #popup {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+  top: 15%;
+  left: 25%;
+  transform: translate(-150vw,-150vw);
+  -ms-transform: translate(-150vw,-150vw);
   background-color: var(--popupbackground);
   border: 10px solid var(--headerbackground);
   width: 55vw;
