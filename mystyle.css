@@ -1004,6 +1004,28 @@ a {
   padding-top: 20%;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 20vw;
+  height: 20vw;
+  background-color: var(--headerbackground);
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  margin-left: -13.2vw;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 /* CONTACT FORM */
 
 #contactFormDiv {
