@@ -226,6 +226,10 @@ html[page="home"] #header {
   padding: 0;
 }
 
+html[page="experience"] #header {
+  background-color: var(--headerbackground2);
+}
+
 html[page="interests"] .sticky {
   background-color: #1a1e22;
 }
@@ -1087,6 +1091,16 @@ html[page="home"] .footer {
   width: 101.4vw;
   height: 20%;
   margin-top: 3%;
+  transform: translate3d(-0.4vw, 1vh, 0);
+  text-align: center;
+  color: var(--text);
+}
+
+html[page="experience"] .footer {
+  background-color: var(--headerbackground);
+  width: 100vw;
+  height: 20%;
+  margin-top: 13.5%;
   transform: translate3d(-0.4vw, 1vh, 0);
   text-align: center;
   color: var(--text);
