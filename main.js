@@ -44,10 +44,10 @@ else {
 }
 
 // MENU BUTTONS
-function myWork(){
+function myProjects(){
   var slideshow = document.getElementById("slideshow");
   document.documentElement.scrollTop = slideshow.offsetTop;
-  document.body.scrollTop = slideshow.offsetTop-85;
+  document.body.scrollTop = slideshow.offsetTop-95;
 }
 
 // SHOW MORE BUTTON
