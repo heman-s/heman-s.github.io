@@ -1220,9 +1220,10 @@ html[theme="dark"] .dropdown a:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  transform: translate3d(-0.5vw, -0.8vh, 0);
-
+  margin-left: -0.49vw;
+  margin-top: -0.42vw;
 }
+
 .bgimg-1 {
   background-image: url("./assets/nba6.jpg");
   background-size:101% 100%;
