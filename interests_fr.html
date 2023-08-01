@@ -1,0 +1,58 @@
+<html page="interests" theme="light">
+<head>
+<title>Interests</title>
+<link href="mystyle.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<ul id="header">
+    <table id="headerTable">
+      <tr>
+        <td class="animated animatedFadeInUp fadeInRight"><li style="color: white;" id="title">H<span class="smallerTitle">EMAN</span> S<span class="smallerTitle">EEGOLAM</span></li></td>
+      </tr>
+  
+    <!-- MENU BUTTONS -->
+    <li class="animated animatedFadeInUp fadeInLeft" style="animation-delay: 1s"><a href="interestsPage.html" style="color: white;">Intérēts</a></li>
+    <li class="animated animatedFadeInUp fadeInLeft" style="animation-delay: 1.5s"><a href="./assets/CV.pdf" target="_blank" style="color: white;">CV</a></li>
+    <li class="animated animatedFadeInUp fadeInLeft" style="animation-delay: 2s"><a href="experience.html" style="color: white;">Expérience</a></li>
+    <li class="animated animatedFadeInUp fadeInLeft" style="animation-delay: 2.5s"><a href="index.html" style="color: white;">Accueil</a></li>
+    <input id="darkModeButton" name="darkModeButton" class="toggle" type="checkbox" onclick="darkMode()">
+    <label for="darkModeButton" class="sr">Dark Mode</label>
+    </table>
+  </ul>
+
+<!-- PARALLAX CONTENT -->
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border fadeIn" style="animation-delay: 3s">Intérēts</span>
+    <br>
+    <span class="border fadeIn" style="animation-delay: 3.5s; font-size: 50px;">Prochainement</span>
+  </div>
+</div>
+
+
+
+<!-- FOOTER -->
+<div class="footer">
+  <p class="animated animatedFadeInUp fadeInUp" id="copyright">© 2023 Heman Seegolam. Tous Droits Réservés.</p>
+  <!-- <div class="dropdown" class="dropdownButton animated animatedFadeInUp fadeInUp" style="animation-delay: 0.5s;">
+    <button onclick="dropdown()" class="dropdownButton">
+      <img src="./assets/uk.png" id="ukLogo"/>
+      English <span style="font-size: 15px;">↴</span>
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a>
+        <img src="./assets/france.png" id="franceLogo"/>
+        French
+      </a>
+    </div>
+  </div> -->
+  <!-- REMOVE STYLE BELOW WHEN ADDING DROPDOWN -->
+  <input type="button" class="animated animatedFadeInUp fadeInUp" style="animation-delay: 0.5s; margin-left: 0%;" id="goToTopButton" value="Go To Top" onclick="goToTop()">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
