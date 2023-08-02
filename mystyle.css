@@ -1212,6 +1212,34 @@ html[theme="dark"] .dropdown a:hover {
 }
 
 /* EXPERIENCE PAGE */
+.experienceBgImage {
+  background-image: url("./assets/BMW1.jpg");
+  background-size: cover;
+  min-height: 125%;
+  /* background-attachment: fixed; */
+  width: 100vw;
+  margin-left: -0.49vw;
+  margin-top: -23vh;
+}
+
+.experienceTitle {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  transform: translate3d(0, -5vh, 0);
+}
+
+.experienceTitle span.border {
+  font-family: Geneva, Verdana, Tahoma, sans-serif;
+  color: white;
+  padding: 18px;
+  font-size: 110px;
+  letter-spacing: 2px;
+}
+
 .experienceTable {
   margin: auto;
   /* border: 2px solid black; */
