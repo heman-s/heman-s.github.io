@@ -1224,12 +1224,13 @@ html[theme="dark"] .dropdown a:hover {
 
 .experienceTitle {
   position: absolute;
-  left: 0;
-  top: 45%;
-  width: 100%;
+  left: 30%;
+  top: 50%;
+  width: 40%;
   text-align: center;
-  color: #000;
   transform: translate3d(0, -5vh, 0);
+  border: 4px solid white;
+  /* background-color: #faf2e64d; */
 }
 
 .experienceTitle span.border {
