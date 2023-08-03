@@ -1257,6 +1257,8 @@ html[theme="dark"] .dropdown a:hover {
 
 .experienceTable {
   margin: auto;
+  table-layout: fixed;
+  width: 100%;
 }
 
 .vl {
@@ -1268,11 +1270,28 @@ html[theme="dark"] .dropdown a:hover {
 
 .experienceHeader {
   /* border: 2px solid black; */
-  padding: 5%;
+  padding: 3%;
   text-align: center;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   font-size: 25px;
   color: var(--text);
+  width: 120%;
+}
+
+.rightTableDiv {
+  border: 2px solid black;
+  transform: translate3d(-20vw,0,0);
+  height: 40vh;
+  width: 40vw;
+  text-align: center;
+}
+
+.leftTableDiv {
+  border: 2px solid black;
+  transform: translate3d(4vw,0,0);
+  height: 40vh;
+  width: 40vw;
+  text-align: center;
 }
 
 /* INTERESTS PAGE */
