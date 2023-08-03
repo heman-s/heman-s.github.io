@@ -1240,15 +1240,28 @@ html[theme="dark"] .dropdown a:hover {
   letter-spacing: 2px;
 }
 
+.experienceImages {
+  width: 33vw;  
+  padding: 1%;
+  opacity: 0.7;
+}
+
+.leftImage {
+  margin-left: -0.49vw;
+}
+
+.rightImage {
+  margin-right: -0.49vw;
+}
+
 .experienceTable {
   margin: auto;
-  /* border: 2px solid black; */
 }
 
 .vl {
   border-left: 6px dotted black;
   width: 0;
-  height: 20vh;
+  height: 40vh;
   margin: auto; 
 }
 
