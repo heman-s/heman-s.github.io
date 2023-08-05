@@ -1279,7 +1279,7 @@ html[theme="dark"] .dropdown a:hover {
 }
 
 .rightTableDiv {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   transform: translate3d(-20vw,0,0);
   height: 40vh;
   width: 40vw;
@@ -1290,7 +1290,7 @@ html[theme="dark"] .dropdown a:hover {
 }
 
 .leftTableDiv {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   transform: translate3d(4vw,0,0);
   height: 40vh;
   width: 40vw;
