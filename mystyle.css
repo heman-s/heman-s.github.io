@@ -1283,7 +1283,10 @@ html[theme="dark"] .dropdown a:hover {
   transform: translate3d(-20vw,0,0);
   height: 40vh;
   width: 40vw;
-  text-align: center;
+  /* text-align: center; */
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  font-size: 22px;
+  color: var(--text);
 }
 
 .leftTableDiv {
@@ -1291,7 +1294,10 @@ html[theme="dark"] .dropdown a:hover {
   transform: translate3d(4vw,0,0);
   height: 40vh;
   width: 40vw;
-  text-align: center;
+  /* text-align: center; */
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  font-size: 22px;
+  color: var(--text);
 }
 
 /* INTERESTS PAGE */
