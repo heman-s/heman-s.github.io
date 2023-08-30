@@ -167,3 +167,21 @@ function goToTop(){
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Mobile Menu Button
+function mobileMenu() {
+  if (document.getElementById("menu").style.display == "none") {
+    mobileMenuOn();
+  }
+  else {
+    mobileMenuOff();
+  }
+}
+
+function mobileMenuOn() {
+  document.getElementById("menu").style.display = "block";
+}
+
+function mobileMenuOff() {
+  document.getElementById("menu").style.display = "none";
+}
