@@ -1403,13 +1403,14 @@ h3 {
   @media only screen and (max-width: 600px) {
     /* HEADER */
 
-    table#headerTable, th, td {
+    /* table#headerTable, th, td {
       width: 60%;
       border-collapse: collapse;
       border: 2px solid black;
-    }
+    } */
 
     /* #header {
+      border: 2px solid black;
       position: fixed;
       list-style-type: none;
       width: 100vw;
@@ -1425,16 +1426,6 @@ h3 {
       background-color: var(--headerbackground2);
     } */
 
-    /* .sticky #title, .sticky .smallerTitle {
-      font-size: 45px;
-    } */
-
-    /* .sticky #subsidiary, .sticky .smallerSubsidiary {
-      font-size: 0;
-      opacity: 0;
-      padding: 0;
-    } */
-
     /* html[page="experience"] #header {
       background-color: var(--headerbackground2);
     } */
@@ -1444,40 +1435,37 @@ h3 {
     } */
 
     /* #title {
-      float: left;
-      font-size: 95px;
-      font-family: Geneva, Tahoma, Verdana, sans-serif;
-      color: var(--text);
-      padding-top: 10px;
-      padding-left: 15px;
+      font-size: 100%;
       transition: 2s;
-    } */
+    }
 
-    /* .smallerTitle { 
-      font-size: 80px;
+    .smallerTitle { 
+      font-size: 100%;
       transition: 2s;
-    } */
+    }
 
-    /* #subsidiary {
-      float: left;
-      font-size: 30px;
-      font-family: Geneva, Tahoma, Verdana, sans-serif;
-      color: var(--text);
-      padding-left: 18px;
-      padding-bottom: 15px;
+    #subsidiary {
+      font-size: 50%;
       transition: 2s;
-    } */
+    }
 
-    /* .smallerSubsidiary { 
-      font-size: 22px;
+    .smallerSubsidiary { 
+      font-size: 50%;
       transition: 2s;
-    } */
+    }
 
-    /* li {
-      float: right;
-      font: 23px "Lato", sans-serif;
-      padding-top: 7px;
-      padding-right: 10px;
+    .sticky #title, .sticky .smallerTitle {
+      font-size: 100%;
+    }
+
+    .sticky #subsidiary, .sticky .smallerSubsidiary {
+      font-size: 0;
+      opacity: 0;
+      padding: 0;
+    }
+
+    li {
+      font: 20% "Lato", sans-serif;
     } */
 
     /* li a {

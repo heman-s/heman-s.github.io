@@ -1,10 +1,3 @@
-// REDIRECT TO MOBILE SITE
-SA.redirection_mobile ({
-  redirection_param : "mobile_redirection",
-  mobile_prefix : "m",
-  cookie_hours : "2" 
-});
-
 // STICKY HEADER
 window.onscroll = function() {stickyHeader()};
 
