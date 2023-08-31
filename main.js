@@ -170,18 +170,10 @@ function goToTop(){
 
 // Mobile Menu Button
 function mobileMenu() {
-  if (document.getElementById("menu").style.display == "none") {
-    mobileMenuOn();
+  if (document.getElementById("menu").style.display == "block") {
+    document.getElementById("menu").style.display = "none";
   }
   else {
-    mobileMenuOff();
+    document.getElementById("menu").style.display = "block";
   }
-}
-
-function mobileMenuOn() {
-  document.getElementById("menu").style.display = "block";
-}
-
-function mobileMenuOff() {
-  document.getElementById("menu").style.display = "none";
 }
