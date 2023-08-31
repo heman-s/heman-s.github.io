@@ -1509,6 +1509,10 @@ h3 {
                   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   opacity 0.55s ease;
     }
+
+    html[page="interests"] #menuToggle span {
+      background: white;
+    }
     
     #menuToggle span:first-child
     {
@@ -1526,6 +1530,11 @@ h3 {
       transform: rotate(45deg) translate(-1.7vw, -1.5vh);
       background: #36383F;
     }
+
+    html[page="interests"] #menuToggle input:checked ~ span {
+      background: white;
+    }
+
     #menuToggle input:checked ~ span:nth-last-child(3)
     {
       opacity: 0;
@@ -1566,6 +1575,8 @@ h3 {
       transform: scale(1.25); 
       color: #b1b0b0;
     }
+
+    
 
     /* #menu li
     {
