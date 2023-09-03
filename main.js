@@ -170,10 +170,20 @@ function goToTop(){
 
 // Mobile Menu Button
 function mobileMenu() {
+  let menuItems = document.getElementsByClassName("menuItem");
+  let animationDelay = 0;
   if (document.getElementById("menu").style.display == "block") {
     document.getElementById("menu").style.display = "none";
   }
   else {
     document.getElementById("menu").style.display = "block";
+  }
+  animationDelay = 0
+  for (i = 0; i < menuItems.length; i++) {
+    menuItems[i].classList.toggle('animated');
+    menuItems[i].classList.toggle('animatedFadeInUp');
+    menuItems[i].classList.toggle('fadeInLeft');
+    menuItems[i].style.animationDelay = animationDelay+"s";
+    animationDelay+=0.3;
   }
 }
