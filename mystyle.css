@@ -28,7 +28,7 @@ html[theme="dark"] body {
 }
 
 /* FADE IN ANIMATIONS */
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
   from {
       transform: translate3d(0,5vw,0)
   }
@@ -121,7 +121,7 @@ html[theme="dark"] body {
   opacity: 0;
   animation-name: fadeInLeft;
   -webkit-animation-name: fadeInLeft;
-}
+} */
 
 /* DARK MODE */
 
@@ -304,7 +304,8 @@ table#profileSummary {
   text-align: center;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   color: var(--text);
-  font-size: 45px;
+  /* font-size: 45px; */
+  font-size: 3vw;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
@@ -315,11 +316,11 @@ table#profileSummary {
   }
 }
 
-.fadeIn {
+/* .fadeIn {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
-}
+} */
 
 span:nth-child(1) {
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
@@ -346,8 +347,10 @@ span:nth-child(4) {
 
 .me {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  /* width: 200px;
+  height: 200px; */
+  width: 25vh;
+  height: 25vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -359,7 +362,8 @@ span:nth-child(4) {
 
 .profileSummaryContent {
   font-family: verdana;
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-size: 1.5vw;
   text-align: center;
   color: var(--text);
 }
@@ -385,8 +389,8 @@ html[theme="dark"] .fade {
   border: none;
   background-color: inherit;
   color: dodgerblue;
-  font-size: 25px;
-  padding-top: 12px;
+  font-size: 1.5vw;
+  padding-top: 2vh;
   cursor: pointer;
 }
 
@@ -418,14 +422,12 @@ img {
 
 .slider {
 overflow: hidden;
-/* border: 1px solid black; */
 width: 100vw;
 transform: translate3d(-0.5vw, 0.5vw, 0);
 }
 
 .slides {
   position: relative;
-  /* border: 1px solid black; */
   width: 270vw;
   display: flex;
   max-height: 82%;
@@ -475,13 +477,14 @@ transform: translate3d(-0.5vw, 0.5vw, 0);
 }
 
 .manual-btn {
-  padding: 0.5px;
   cursor: pointer;
   transition: 1s;
-  width: 10px;
-  height: 10px;
+  width: 1.4vh;
+  height: 1.4vh;
   border-radius: 100%;
   display: block;
+  margin-left: 2vw;
+  margin-top: -1vw;
 }
 
 html[theme="light"] .manual-btn {
@@ -523,22 +526,21 @@ html[theme="dark"] .manual-btn {
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 100px;
   transform: translate3d(-46vw, -13vh, 0);
 }
 
 .pauseButtonBG {
   background: inherit;
-  border: 2px solid var(--buttonColour);
+  border: 0.15vw solid var(--buttonColour);
   border-radius: 50%;
   box-shadow: 0 1px 2.2px rgba(0, 0, 0, 0.051),
     0 2.3px 5.3px rgba(0, 0, 0, 0.059), 0 4.4px 10px rgba(0, 0, 0, 0.06),
     0 7.8px 17.9px rgba(0, 0, 0, 0.059), 0 14.6px 33.4px rgba(0, 0, 0, 0.059),
     0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
-  height: 50px;
   position: absolute;
-  width: 50px;
+  width: 3vw;
+  height: 3vw;
 }
 
 .pauseButton:active .pauseButtonBG {
@@ -1418,16 +1420,18 @@ h3 {
 
     #header {
       margin-top: 0vh;
-      margin-left: -11vw;
+      margin-left: -12vw;
     }
 
     #title {
       padding: 0;
       font-size: 100%;
+      transition: 0s;
     }
 
     .smallerTitle {
       font-size: 100%;
+      transition: 0s;
     }
 
     #subsidiary {
@@ -1435,24 +1439,29 @@ h3 {
       padding: 0;
       padding-bottom: 5%;
       font-size: 80%;
+      transition: 0s;
     }
 
     .smallerSubsidiary { 
       font-size: 80%;
+      transition: 0s;
     }
 
     .sticky #title {
-      font-size: 140%;
+      font-size: 100%;
+      transition: 0s;
     }
 
     .sticky .smallerTitle {
       font-size: 100%;
+      transition: 0s;
     }
 
     .sticky #subsidiary, .sticky .smallerSubsidiary {
       font-size: 80%;
       opacity: 1;
       padding-bottom: 5%;
+      transition: 0s;
     }
 
     .menu {
@@ -1462,7 +1471,7 @@ h3 {
     } 
 
     #darkModeButton {
-      transform: translate3d(86vw, 7vh, 0);
+      transform: translate3d(81vw, 7vh, 0);
     }
 
     .mobileMenu {
@@ -1470,7 +1479,7 @@ h3 {
       height: 4vh;
       width: 7vw;
       margin-top: 2vh;
-      margin-right: 2vh;
+      margin-right: 4vh;
       visibility: visible;
     }
     
