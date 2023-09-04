@@ -28,7 +28,7 @@ html[theme="dark"] body {
 }
 
 /* FADE IN ANIMATIONS */
-/* @keyframes fadeInUp {
+@keyframes fadeInUp {
   from {
       transform: translate3d(0,5vw,0)
   }
@@ -121,12 +121,12 @@ html[theme="dark"] body {
   opacity: 0;
   animation-name: fadeInLeft;
   -webkit-animation-name: fadeInLeft;
-} */
+}
 
 /* DARK MODE */
 
 #darkModeButton {
-  transform: translate3d(95.5vw, 6.5vh, 0);
+  transform: translate3d(95.5vw, 8vh, 0);
 }
 
 .sr, .toggle:before, .toggle:after {
@@ -318,11 +318,11 @@ table#profileSummary {
   }
 }
 
-/* .fadeIn {
+.fadeIn {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
-} */
+}
 
 span:nth-child(1) {
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
@@ -526,7 +526,7 @@ html[theme="dark"] .manual-btn {
   display: flex;
   justify-content: center;
   width: 6vw;
-  transform: translate3d(-46vw, -13vh, 0);
+  transform: translate3d(-47.5vw, -13vh, 0);
 }
 
 .pauseButtonBG {
@@ -863,7 +863,7 @@ html[theme="dark"] .manual-btn {
   color: dodgerblue;
   font-size: 1.5vw;
   float: right;
-  transform: translate3d(-1vw, -24vh, 0);
+  transform: translate3d(-1.5vw, -24vh, 0);
   cursor: pointer;
 }
 
@@ -1183,16 +1183,14 @@ html[theme="dark"] .dropdown a:hover {
 #goToTopButton {
   width: 12%;
   height: 6vh;
-  padding: 12px 20px;
   border: none;
-  border-radius: 30px;
+  border-radius: 2vw;
   background-color: white;
-  font-size: 18px;
+  font-size: 1vw;
   cursor: pointer;
   margin-top: 2vh;
   margin-left: 11%;
-  /* margin-right: 0%; */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 0.8vw 1.6vw 0 rgba(0,0,0,0.2);
 }
 
 #goToTopButton:hover {
