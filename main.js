@@ -47,7 +47,7 @@ else {
 function myProjects(){
   var slideshow = document.getElementById("slideshow");
   document.documentElement.scrollTop = slideshow.offsetTop;
-  document.body.scrollTop = slideshow.offsetTop-90;
+  document.body.scrollTop = slideshow.offsetTop-107;
 }
 
 // SHOW MORE BUTTON

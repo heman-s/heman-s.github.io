@@ -299,7 +299,7 @@ html[page="interests"] .sticky {
 table#profileSummary {
   width: 60%;
   margin: 0 auto;
-  margin-top: 32vh;
+  margin-top: 25vh;
   margin-bottom: 10vh;
 }
 
@@ -354,8 +354,8 @@ span:nth-child(4) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1vh;
-  margin-bottom: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 6vh;
   box-shadow: 1vw 1vw 2vw gray;
   border: 0.2vw solid var(--headerbackground);
 }
@@ -526,7 +526,7 @@ html[theme="dark"] .manual-btn {
   display: flex;
   justify-content: center;
   width: 6vw;
-  transform: translate3d(-47.5vw, -13vh, 0);
+  transform: translate3d(-47.5vw, -13.5vh, 0);
 }
 
 .pauseButtonBG {
