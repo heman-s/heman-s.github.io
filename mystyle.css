@@ -216,7 +216,7 @@ html[page="home"] #header {
 }
 
 .sticky #title, .sticky .smallerTitle {
-  font-size: 45px;
+  font-size: 3.5vw;
 }
 
 .sticky #subsidiary, .sticky .smallerSubsidiary {
@@ -235,46 +235,46 @@ html[page="interests"] .sticky {
 
 #title {
   float: left;
-  font-size: 95px;
+  font-size: 6vw;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   color: var(--text);
-  padding-top: 10px;
-  padding-left: 15px;
+  padding-left: 1vw;
+  margin-top: -5vh;
   transition: 2s;
 }
 
 .smallerTitle { 
-  font-size: 80px;
+  font-size: 5vw;
   transition: 2s;
 }
 
 #subsidiary {
   float: left;
-  font-size: 30px;
+  font-size: 2vw;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   color: var(--text);
-  padding-left: 18px;
-  padding-bottom: 15px;
+  padding-left: 1.2vw;
+  padding-bottom: 1.5vh;
   transition: 2s;
 }
 
 .smallerSubsidiary { 
-  font-size: 22px;
+  font-size: 1.5vw;
   transition: 2s;
 }
 
 .menu {
   float: right;
-  font: 23px "Lato", sans-serif;
-  padding-top: 7px;
-  padding-right: 10px;
+  font: 1.5vw "Lato", sans-serif;
+  padding-top: 1vh;
+  padding-right: 0.7vw;
 }
 
 .menu a {
   display: block;
   color: var(--text);
   text-align: center;
-  padding: 16px 18px;
+  padding: 1vw 2vh;
   text-decoration: none;
   cursor: pointer;
 }
@@ -290,6 +290,10 @@ html[page="interests"] .sticky {
   visibility: hidden;
 }
 
+#menu {
+  visibility: hidden;
+}
+
 /* PROFILE SUMMARY */
 
 table#profileSummary {
@@ -297,14 +301,12 @@ table#profileSummary {
   margin: 0 auto;
   margin-top: 32vh;
   margin-bottom: 10vh;
-  border-spacing: 0 15px;
 }
 
 #profileSummaryHeader {
   text-align: center;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   color: var(--text);
-  /* font-size: 45px; */
   font-size: 3vw;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -347,8 +349,6 @@ span:nth-child(4) {
 
 .me {
   border-radius: 50%;
-  /* width: 200px;
-  height: 200px; */
   width: 25vh;
   height: 25vh;
   display: block;
@@ -356,13 +356,12 @@ span:nth-child(4) {
   margin-right: auto;
   margin-top: 1vh;
   margin-bottom: 5vh;
-  box-shadow: 10px 10px 20px gray;
-  border: 2px solid var(--headerbackground);
+  box-shadow: 1vw 1vw 2vw gray;
+  border: 0.2vw solid var(--headerbackground);
 }
 
 .profileSummaryContent {
   font-family: verdana;
-  /* font-size: 25px; */
   font-size: 1.5vw;
   text-align: center;
   color: var(--text);
@@ -548,17 +547,17 @@ html[theme="dark"] .manual-btn {
 }
 
 .icon {
-  height: 100px;
+  width: 5.9vw;
+  height: 5.9vw;
   transform: rotate(-120deg);
   transition: transform 500ms;
-  width: 100px;
 }
 
 .part {
+  width: 5.9vw;
+  height: 5.9vw;
   background: var(--buttonColour);
-  height: 100px;
   position: absolute;
-  width: 100px;
 }
 
 .left {
@@ -702,12 +701,12 @@ html[theme="dark"] .manual-btn {
 }
 
 .pointer {
+  width: 5.9vw;
+  height: 5.9vw;
   border-radius: 50%;
   cursor: pointer;
-  height: 100px;
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  width: 100px;
 }
 
 .active .icon {
@@ -853,18 +852,17 @@ html[theme="dark"] .manual-btn {
 }
 
 /* FIND OUT MORE BUTTON */
-
 .findOutMore {
-  padding-top: 25px;
+  padding-top: 3vh;
 }
 
 #findOutMoreButton {
   border: none;
   background-color: inherit;
   color: dodgerblue;
-  font-size: 25px;
+  font-size: 1.5vw;
   float: right;
-  transform: translate3d(-60px, -210px, 0);
+  transform: translate3d(-1vw, -24vh, 0);
   cursor: pointer;
 }
 
@@ -886,11 +884,9 @@ html[theme="dark"] .manual-btn {
 #popup {
   position: absolute;
   top: 15%;
-  left: 25%;
-  transform: translate(-150vw,-150vw);
-  -ms-transform: translate(-150vw,-150vw);
+  left: 22.5%;
   background-color: var(--popupbackground);
-  border: 10px solid var(--headerbackground);
+  border: 0.6vw solid var(--headerbackground);
   width: 55vw;
   height: 70vh;
 }
@@ -1557,6 +1553,7 @@ h3 {
     }
     
     #menu {
+      visibility: visible;
       position: fixed;
       display: none;
       width: 100vw;
@@ -1587,17 +1584,6 @@ h3 {
     }
 
     
-
-    /* #menu li
-    {
-      padding: 10px 0;
-      transition-delay: 2s;
-    }
-    
-    #menuToggle input:checked ~ ul
-    {
-      transform: none;
-    } */
     
   }
 }
