@@ -28,7 +28,7 @@ html[theme="dark"] body {
 }
 
 /* FADE IN ANIMATIONS */
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
   from {
       transform: translate3d(0,5vw,0)
   }
@@ -121,7 +121,7 @@ html[theme="dark"] body {
   opacity: 0;
   animation-name: fadeInLeft;
   -webkit-animation-name: fadeInLeft;
-}
+} */
 
 /* DARK MODE */
 
@@ -1202,6 +1202,10 @@ html[theme="dark"] .dropdown a:hover {
 }
 
 /* EXPERIENCE PAGE */
+html[page="experience"] #title {
+  margin-top: 0vh;
+}
+
 .experienceBgImage {
   background-image: url("./assets/BMW1.jpg");
   background-size: cover;
@@ -1219,15 +1223,15 @@ html[theme="dark"] .dropdown a:hover {
   width: 40%;
   text-align: center;
   transform: translate3d(0, -5vh, 0);
-  border: 4px solid white;
+  border: 0.3vw solid white;
 }
 
 .experienceTitle span.border {
   font-family: Geneva, Verdana, Tahoma, sans-serif;
   color: white;
-  padding: 18px;
-  font-size: 110px;
-  letter-spacing: 2px;
+  padding: 1.5vw;
+  font-size: 6vw;
+  letter-spacing: 0.2vw;
 }
 
 .experienceImages {
@@ -1255,43 +1259,40 @@ html[theme="dark"] .dropdown a:hover {
   left: 32.5%;
   width: 35%;
   text-align: center;
-  /* transform: translate3d(0, 5vh, 0); */
   margin-top: 5vh;
-  border: 4px solid black;
+  border: 0.3vw solid black;
 }
 
 .educationTitle span.border {
   font-family: Geneva, Verdana, Tahoma, sans-serif;
   color: black;
-  padding: 18px;
-  font-size: 100px;
-  letter-spacing: 2px;
+  padding: 1.5vw;
+  font-size: 6vw;
+  letter-spacing: 0.2vw;
 }
 
 .vl {
-  border-left: 6px dotted black;
+  border-left: 0.4vw dotted black;
   width: 0;
   height: 40vh;
   margin: auto; 
 }
 
 .experienceHeader {
-  /* border: 2px solid black; */
   padding: 3%;
   text-align: center;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
-  font-size: 25px;
+  font-size: 1.5vw;
   color: var(--text);
   width: 120%;
 }
 
 .rightTableDiv {
-  /* border: 2px solid black; */
   margin-left: -20vw;
   height: 40vh;
   width: 40vw;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
-  font-size: 22px;
+  font-size: 1.2vw;
   color: var(--text);
 }
 
@@ -1301,11 +1302,15 @@ html[theme="dark"] .dropdown a:hover {
   height: 40vh;
   width: 40vw;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
-  font-size: 22px;
+  font-size: 1.2vw;
   color: var(--text);
 }
 
 /* INTERESTS PAGE */
+html[page="interests"] #title {
+  margin-top: 0vh;
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
   position: relative;
   opacity: 0.8;
@@ -1348,27 +1353,27 @@ html[theme="dark"] .dropdown a:hover {
 
 .caption {
   position: absolute;
-  left: 0;
+  left: 35%;
   top: 50%;
-  width: 100%;
+  width: 30%;
   text-align: center;
   color: #000;
-  transform: translate3d(0, -5vh, 0)
+  transform: translate3d(0, -5vh, 0);
+  border: 0.3vw solid white;
 }
 
 .caption span.border {
   font-family: 'SignPainter';
-  /* background-color: #111; */
   color: #fff;
-  padding: 18px;
-  font-size: 150px;
-  letter-spacing: 2px;
+  padding: 1.5vw;
+  font-size: 8vw;
+  letter-spacing: 0.2vw;
 }
 
 h3 {
-  letter-spacing: 5px;
+  letter-spacing: 0.25vw;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 1.3vw "Lato", sans-serif;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -1383,7 +1388,8 @@ h3 {
   color: white;
   background-color: #282E34;
   text-align: center;
-  padding: 50px 80px;
+  /* padding: 50px 80px; */
+  padding: 2vw 4.76vw;
   text-align: justify;
   width: 90.5vw;
   transform: translate3d(-0.5vw, -0.8vh, 0);
@@ -1554,7 +1560,7 @@ h3 {
     
     #menu li {
       display: block;
-      font: 23px "Lato", sans-serif;
+      font: 6vw "Lato", sans-serif;
       text-align: center;
       padding: 12% 0;
       text-decoration: none;
