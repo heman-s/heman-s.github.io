@@ -1033,6 +1033,20 @@ a {
 
 /* CONTACT FORM */
 
+.formLine {
+  border: 0.4vh solid var(--headerbackground);
+  width: 100vw;
+}
+
+.contactFormHeader {
+  font-size:2vw;
+}
+
+.contactFormSubsidiary {
+  color:gray;
+  padding-bottom: 2%;
+}
+
 #contactFormDiv {
   color: var(--text);
   text-align: center;
@@ -1052,7 +1066,7 @@ input[type=text], #message {
 #submitButton {
   width: 12%;
   height: 6%;
-  margin: 1vw 0;
+  /* margin: 1vw 0; */
   border: none;
   border-radius: 2vw;
   background-color: var(--headerbackground);
@@ -1067,11 +1081,6 @@ input[type=text], #message {
 
 #submitButton:active {
   opacity: 0.6;
-}
-
-.formLine {
-  border: 0.4vh solid var(--headerbackground);
-  width: 100vw;
 }
 
 
@@ -1400,25 +1409,22 @@ h3 {
 @media (orientation: portrait) {
   @media only screen and (max-width: 600px) {
     /* HEADER */
-    table#headerTable, th#headerTable, td#headerTable {
-      margin-left: 2vw;
-      width: 51%; 
-      transform: translateY(-3vh);
-    }
 
-    #header {
-      margin-left: -12vw;
+    table#headerTable, th#headerTable, td#headerTable {
+      margin-left: -6vw;
+      width: 51%; 
+      transform: translateY(-2vh);
     }
 
     #title {
       margin-top: 1vh;
       padding: 0;
-      font-size: 100%;
+      font-size: 110%;
       transition: 0s;
     }
 
     .smallerTitle {
-      font-size: 100%;
+      font-size: 110%;
       transition: 0s;
     }
 
@@ -1436,12 +1442,12 @@ h3 {
     }
 
     .sticky #title {
-      font-size: 100%;
+      font-size: 110%;
       transition: 0s;
     }
 
     .sticky .smallerTitle {
-      font-size: 100%;
+      font-size: 110%;
       transition: 0s;
     }
 
@@ -1459,7 +1465,7 @@ h3 {
     } 
 
     #darkModeButton {
-      transform: translate3d(80vw, 8vh, 0);
+      transform: translate3d(77vw, 7.5vh, 0);
     }
 
     .mobileMenu {
@@ -1467,7 +1473,7 @@ h3 {
       height: 4vh;
       width: 7vw;
       margin-top: 3vh;
-      margin-right: 4vh;
+      margin-right: 7vh;
       visibility: visible;
       z-index: 3;
     }
@@ -1575,6 +1581,9 @@ h3 {
       color: #b1b0b0;
     }
 
+
+    /* PROFILE SUMMARY */
+
     table#profileSummary {
       width: 80%;
     }
@@ -1590,7 +1599,74 @@ h3 {
     .showMoreButton { 
       font-size: 4vw;
     }
+
+
+    /* CONTACT FORM */
+
+    .formLine {
+      margin-left: -0.8vh;
+    }
+
+    .contactFormHeader {
+      font-size:4vw;
+    }
+
+    #contactFormDiv {
+      font: 3vw "Lato", sans-serif;
+    }
+
+    input[type=text], #message {
+      font-size: 3vw;
+      width: 70%;
+    }
+
+    #submitButton {
+      width: 40%;
+      height: 6%;
+      border-radius: 5vw;
+      font-size: 3vw;
+    }
+
+
+    /* FOOTER */
+
+    html[page="home"] .footer {
+      /* transform: translate3d(-1.9vw, 1vh, 0); */
+      margin-left: -0.8vh;
+    }
     
+    #copyright {
+      font: 3vw "Lato", sans-serif;
+      padding-top: 5%;
+    }
+
+    #goToTopButton {
+      width: 38%;
+      height: 30%;
+      border-radius: 5vw;
+      font-size: 3vw;
+      margin-left: 19%;
+    }
+
+    .dropdownButton {
+      font: 3vw "Lato", sans-serif;
+      padding: 1vw;
+      margin-top: 3vh;
+      margin-right: 1vh;
+    }
+
+    .dropdown-content {
+      font: 3vw "Lato", sans-serif;
+      border-radius: 5vw;
+    }
+
+    .dropdown-content a {
+      padding: 2vw 5vw;
+    }
+
+    .dropdown:hover .dropdown-content {
+      transform: translate3d(-1vw, -1vh, 0);
+    }
   }
 }
 
