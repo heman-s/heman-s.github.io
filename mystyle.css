@@ -1663,8 +1663,8 @@ h3 {
     /* FOOTER */
 
     html[page="home"] .footer {
-      /* transform: translate3d(-1.9vw, 1vh, 0); */
       margin-left: -0.8vh;
+      height: 25%;
     }
     
     #copyright {
@@ -1674,17 +1674,20 @@ h3 {
 
     #goToTopButton {
       width: 38%;
-      height: 30%;
+      height: 25%;
       border-radius: 5vw;
       font-size: 3vw;
-      margin-left: 19%;
+      margin-right: 11%;
+      margin-top: -26%;
+      /* margin-bottom: 15%; */
     }
 
     .dropdownButton {
       font: 3vw "Lato", sans-serif;
       padding: 1vw;
-      margin-top: 3vh;
-      margin-right: 1vh;
+      margin-top: 18%;
+      margin-bottom: 5%;
+      margin-right: 42%;
     }
 
     .dropdown-content {
@@ -1697,13 +1700,23 @@ h3 {
     }
 
     .dropdown:hover .dropdown-content {
-      transform: translate3d(-1vw, -1vh, 0);
+      transform: translate3d(-38.5vw, 13vh, 0);
+    }
+
+    #ukLogo {
+      width: 4.5vw;
+      height: 1.7vh;
+    }
+    
+    #franceLogo {
+      width: 4.5vw;
+      height: 1.7vh;
     }
   }
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   @media only screen and (max-height: 600px) {
     
   }
-}
+} */
