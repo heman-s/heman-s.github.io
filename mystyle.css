@@ -389,7 +389,7 @@ html[theme="dark"] .fade {
   background-color: inherit;
   color: dodgerblue;
   font-size: 1.5vw;
-  padding-top: 2vh;
+  margin-top: 4.8vh;
   cursor: pointer;
 }
 
@@ -409,7 +409,7 @@ html[theme="dark"] .profileSummaryContent.showMore .fade {
 }
 
 .profileSummaryContent.showMore .moreText {
-  height: 48vh;
+  height: 24vh;
   opacity: 1;
 }
 
@@ -526,7 +526,7 @@ html[theme="dark"] .manual-btn {
   display: flex;
   justify-content: center;
   width: 6vw;
-  transform: translate3d(-47.5vw, -13vh, 0);
+  transform: translate3d(-47.5vw, -13.5vh, 0);
 }
 
 .pauseButtonBG {
