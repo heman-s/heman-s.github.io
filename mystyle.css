@@ -28,7 +28,7 @@ html[theme="dark"] body {
 }
 
 /* FADE IN ANIMATIONS */
-/* @keyframes fadeInUp {
+@keyframes fadeInUp {
   from {
       transform: translate3d(0,5vw,0)
   }
@@ -121,7 +121,7 @@ html[theme="dark"] body {
   opacity: 0;
   animation-name: fadeInLeft;
   -webkit-animation-name: fadeInLeft;
-} */
+}
 
 /* DARK MODE */
 
