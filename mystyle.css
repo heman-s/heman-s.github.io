@@ -305,7 +305,7 @@ table#profileSummary {
 
 #profileSummaryHeader {
   text-align: center;
-  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  font-family: Geneva, Verdana, Tahoma, sans-serif;
   color: var(--text);
   font-size: 3vw;
   transform: scale(0.94);
@@ -526,7 +526,7 @@ html[theme="dark"] .manual-btn {
   display: flex;
   justify-content: center;
   width: 6vw;
-  transform: translate3d(-47.5vw, -13.5vh, 0);
+  transform: translate3d(-47.5vw, -13vh, 0);
 }
 
 .pauseButtonBG {
@@ -1400,7 +1400,6 @@ h3 {
 @media (orientation: portrait) {
   @media only screen and (max-width: 600px) {
     /* HEADER */
-
     table#headerTable, th#headerTable, td#headerTable {
       margin-left: 2vw;
       width: 51%; 
@@ -1408,11 +1407,11 @@ h3 {
     }
 
     #header {
-      margin-top: 0vh;
       margin-left: -12vw;
     }
 
     #title {
+      margin-top: 1vh;
       padding: 0;
       font-size: 100%;
       transition: 0s;
@@ -1460,18 +1459,18 @@ h3 {
     } 
 
     #darkModeButton {
-      transform: translate3d(81vw, 7vh, 0);
+      transform: translate3d(80vw, 8vh, 0);
     }
 
     .mobileMenu {
       float: right;
       height: 4vh;
       width: 7vw;
-      margin-top: 2vh;
+      margin-top: 3vh;
       margin-right: 4vh;
       visibility: visible;
+      z-index: 3;
     }
-    
     
     #menuToggle {
       display: flex;
@@ -1576,7 +1575,21 @@ h3 {
       color: #b1b0b0;
     }
 
-    
+    table#profileSummary {
+      width: 80%;
+    }
+
+    #profileSummaryHeader {
+      font-size: 7vw;
+    }
+
+    .profileSummaryContent {
+      font-size: 4vw;
+    }
+
+    .showMoreButton { 
+      font-size: 4vw;
+    }
     
   }
 }
