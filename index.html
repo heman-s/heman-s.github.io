@@ -20,7 +20,7 @@
     </tr>
 
     <!-- Menu for Mobile -->
-    <div class="mobileMenu">
+    <div class="mobileMenu animated animatedFadeInUp fadeInLeft">
       <div id="menuToggle">
         <input type="checkbox" onclick="mobileMenu()"/>
           <span></span>
@@ -50,16 +50,16 @@
 <table id="profileSummary">
   <tr>
     <th id="profileSummaryHeader">
-      <span class="fadeIn" style="animation-delay: 3.5s">Hi,</span> <span class="fadeIn" style="animation-delay: 3.5s">I'm</span> <span class="fadeIn" style="animation-delay: 3.5s">Heman.</span>
+      <span class="fadeIn" id="fadeIn">Hi,</span> <span class="fadeIn" id="fadeIn">I'm</span> <span class="fadeIn" id="fadeIn">Heman.</span>
     </th>
   </tr>
   <tr>
     <td>
-      <img src="./assets/me2.jpg" class="me animated animatedFadeInUp fadeInUp" style="animation-delay: 4.5s">
+      <img src="./assets/me2.jpg" class="me animated animatedFadeInUp fadeInUp">
     </td>
   </tr>
   <tr>
-    <td class="profileSummaryContent animated animatedFadeInUp fadeInUp" style="animation-delay: 5s">
+    <td class="profileSummaryContent animated animatedFadeInUp fadeInUp">
       I'm an undergraduate student at King's College London. I'm undertaking my third year, on
       placement with the BMW Group, as part of my BSc Computer Science Degree.
       <br><br>
@@ -78,7 +78,7 @@
     </td>
   </tr>
   <tr>
-    <td class="animated animatedFadeInUp fadeInUp" style="text-align: center; animation-delay: 5s">
+    <td class="animated animatedFadeInUp fadeInUp" id="showMoreButton">
       <input type="button" value="Show More >" class="showMoreButton" onclick="showMore()"/>
     </td>
   </tr>
@@ -86,7 +86,7 @@
 
 <!-- PROJECTS SLIDESHOW -->
 <div align="center">
-  <div class="slider animated animatedFadeInUp fadeInUp" style="animation-delay: 5.5s" id="slideshow">
+  <div class="slider animated animatedFadeInUp fadeInUp" id="slideshow">
     <div class="slides">
       <input type="radio" name="radioButton" id="radio1">
       <input type="radio" name="radioButton" id="radio2">
@@ -248,9 +248,9 @@
 <!-- CONTACT FORM -->
 <div class="formLine" style="transform: translate3d(-0.5vw, -8vh, 0)"></div>
 <div id="contactFormDiv">
-  <h3 class="contactFormHeader animated animatedFadeInUp fadeInUp" style="animation-delay: 6s">Get In Touch</h3>
-  <p class="contactFormSubsidiary animated animatedFadeInUp fadeInUp" style="animation-delay: 7s">Fill out the contact form below and I'll get back to you soon.</p>
-  <form class="animated animatedFadeInUp fadeInUp" style="animation-delay: 7.5s" id="contactForm" onsubmit="return false">
+  <h3 class="contactFormHeader animated animatedFadeInUp fadeInUp">Get In Touch</h3>
+  <p class="contactFormSubsidiary animated animatedFadeInUp fadeInUp">Fill out the contact form below and I'll get back to you soon.</p>
+  <form class="animated animatedFadeInUp fadeInUp" id="contactForm" onsubmit="return false">
     <input type="hidden" name="contact_number">
     <label for="name">Name</label><br>
     <input type="text" id="name" name="name" placeholder="Enter Your Name"><br><br>
@@ -266,7 +266,7 @@
 <div class="footer">
   <p class="animated animatedFadeInUp fadeInUp" id="copyright">© 2023 Heman Seegolam. All Rights Reserved.</p>
   <div class="dropdown">
-    <button onclick="dropdown()" class="dropdownButton animated animatedFadeInUp fadeInUp" style="animation-delay: 0.5s;">
+    <button onclick="dropdown()" class="dropdownButton animated animatedFadeInUp fadeInUp">
       <img src="./assets/uk.png" id="ukLogo"/>
       English
     </button>
@@ -277,7 +277,7 @@
       </a>
     </div>
   </div>
-  <input type="button" class="animated animatedFadeInUp fadeInUp" style="animation-delay: 0.5s;" id="goToTopButton" value="Go To Top" onclick="goToTop()">
+  <input type="button" class="animated animatedFadeInUp fadeInUp" id="goToTopButton" value="Go To Top" onclick="goToTop()">
 </div>
 
 
