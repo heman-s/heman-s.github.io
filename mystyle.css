@@ -1127,8 +1127,8 @@ html[page="interests"] .footer {
   padding: 1vw;
   border: none;
   cursor: pointer;
-  margin-top: -5.4vh;
-  margin-right: 5.4vh;
+  margin-top: -5.8vh;
+  margin-right: 4vh;
   float: right;
   position: relative;
   color: var(--text);
@@ -1163,7 +1163,7 @@ html[page="interests"] .dropdown-content a {
 }
 
 .dropdown:hover .dropdown-content {
-  transform: translate3d(-3.5vw, 0, 0);
+  transform: translate3d(-1.25vw, 0, 0);
   display: block;
 }
 
@@ -1598,6 +1598,38 @@ h3 {
 
     .showMoreButton { 
       font-size: 4vw;
+      margin-top: 2vh;
+    }
+
+    html[theme="light"] .fade {
+      color: rgb(81, 81, 81);
+    }
+    
+    html[theme="dark"] .fade {
+      color: rgba(255, 255, 255);
+    }
+
+    html[theme="light"] .mobileFade {
+      color: rgb(81, 81, 81, 0.3);
+      transition: all 0.5s;
+    }
+    
+    html[theme="dark"] .mobileFade {
+      color: rgba(255, 255, 255, 0.3);
+      transition: all 0.5s;
+    }
+
+    html[theme="light"] .profileSummaryContent.showMore .mobileFade {
+      color: rgb(81, 81, 81);
+    }
+    
+    html[theme="dark"] .profileSummaryContent.showMore .mobileFade {
+      color: rgb(255, 255, 255);
+    }
+    
+    .profileSummaryContent.showMore .moreText {
+      height: 34vh;
+      opacity: 1;
     }
 
 
