@@ -126,7 +126,7 @@ html[theme="dark"] body {
 /* DARK MODE */
 
 #darkModeButton {
-  transform: translate3d(95.5vw, 8vh, 0);
+  transform: translate3d(94.5vw, 8vh, 0);
 }
 
 .sr, .toggle:before, .toggle:after {
@@ -197,6 +197,7 @@ html[theme="dark"] body {
 table#headerTable, th, td {
   width: 60%;
   border-collapse: collapse;
+  margin-left: 0.5vw;
 }
 
 #header {
@@ -261,6 +262,10 @@ html[page="interests"] .sticky {
 .smallerSubsidiary { 
   font-size: 1.5vw;
   transition: 2s;
+}
+
+.menuButtons {
+  margin-right: 1vw;
 }
 
 .menu {
