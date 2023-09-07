@@ -1817,14 +1817,14 @@ h3 {
     #popupLine {
       border: 0.07vw solid gray;
       width: 75vw;
-      transform: translate3d(2.3vw, -2.8vh, 0);
+      transform: translate3d(2.3vw, -3.2vh, 0);
     }
 
     .descHeader {
       letter-spacing: 0.25vw;
       text-transform: uppercase;
       font: 3.5vw "Lato", sans-serif;
-      /* margin-top: -1vh; */
+      margin-top: -0.5vh;
     }
 
     .popupDescription {
