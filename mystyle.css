@@ -1762,30 +1762,32 @@ h3 {
     }
 
     #repository {
+      border: 0.4vw solid var(--headerbackground);
       width: 14.5vw;
       height: 8.5vh;
       transform: translate3d(57vw, -12.5vh, 0);
     }
 
     .report {
+      border: 0.4vw solid var(--headerbackground);
       width: 14.5vw;
       height: 8.5vh;
     }
     
     #report1 {
-      transform: translate3d(57vw, -5vh, 0);
+      transform: translate3d(57vw, -5.5vh, 0);
     }
     
     #report2 {
-      transform: translate3d(57vw, -8vh, 0);
+      transform: translate3d(57vw, -7.6vh, 0);
     }
     
     #report3 {
-      transform: translate3d(40vw, -4vh, 0);
+      transform: translate3d(40vw, -3.6vh, 0);
     }
     
     #report4 {
-      transform: translate3d(57vw, -1vh, 0);
+      transform: translate3d(57vw, -0.8vh, 0);
     }
 
     #reportLabel {
@@ -1822,7 +1824,7 @@ h3 {
       letter-spacing: 0.25vw;
       text-transform: uppercase;
       font: 3.5vw "Lato", sans-serif;
-      margin-top: -1vh;
+      /* margin-top: -1vh; */
     }
 
     .popupDescription {
