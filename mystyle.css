@@ -1809,6 +1809,7 @@ h3 {
     #xButton {
       font-size: 5vw;
       transform: translate3d(69vw, -9vh, 0);
+      width: 5vw;
     }
 
     #popupLine {
