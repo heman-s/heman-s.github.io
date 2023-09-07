@@ -1809,6 +1809,7 @@ h3 {
     #xButton {
       font-size: 5vw;
       transform: translate3d(71vw, -9vh, 0);
+      border: 2px solid black;
     }
 
     #popupLine {
@@ -1821,13 +1822,14 @@ h3 {
       letter-spacing: 0.25vw;
       text-transform: uppercase;
       font: 3.5vw "Lato", sans-serif;
+      margin-top: -1vh;
     }
 
     .popupDescription {
       height: 45vh;
       width: 72vw;
       transform: translate3d(2.3vw, -0.5vh, 0);
-      font-size: 3vw;
+      font-size: 2.5vw;
     }
 
     .descImageJava {
