@@ -1259,6 +1259,7 @@ html[theme="dark"] .dropdown a:hover {
 }
 
 /* EXPERIENCE PAGE */
+
 html[page="experience"] #title {
   margin-top: 0vh;
 }
@@ -1267,7 +1268,6 @@ html[page="experience"] #title {
   background-image: url("./assets/BMW1.jpg");
   background-size: cover;
   min-height: 125%;
-  /* background-attachment: fixed; */
   width: 100vw;
   margin-left: -0.49vw;
   margin-top: -23vh;
@@ -1332,7 +1332,11 @@ html[page="experience"] #title {
   border-left: 0.4vw dotted black;
   width: 0;
   height: 40vh;
-  margin: auto; 
+  margin: auto;
+}
+
+.experienceTable td {
+  vertical-align: middle;
 }
 
 .experienceHeader {
@@ -1346,7 +1350,7 @@ html[page="experience"] #title {
 
 .rightTableDiv {
   margin-left: -20vw;
-  height: 40vh;
+  height: auto;
   width: 40vw;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   font-size: 1.2vw;
@@ -1354,13 +1358,62 @@ html[page="experience"] #title {
 }
 
 .leftTableDiv {
-  /* border: 2px solid black; */
   margin-left: 4vw;
-  height: 40vh;
+  height: auto;
   width: 40vw;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   font-size: 1.2vw;
   color: var(--text);
+}
+
+.linkLabel {
+  padding-left: 6%;
+  font-size: 0.9vw;
+}
+
+#bmwImg {
+  width: 15vw;
+  float: right;
+}
+
+#iclImg {
+  width: 14vw;
+}
+
+#ouImg {
+  width: 7vw;
+  float: right;
+}
+
+#cfImg {
+  width: 7vw; 
+  float: right;
+  transform: translate3d(-1vw, -2.5vh, 0);
+}
+
+#ncscImg {
+  width: 15vw;
+  float: right;
+}
+
+#ukmtImg {
+  width: 15vw;
+}
+
+#hysImg {
+  width: 15vw;
+  float: right;
+}
+
+#kclImg {
+  width: 8vw; 
+  /* float: right; */
+  transform: translate3d(18vw, -29vh, 0);
+}
+
+#shsbImg {
+  width: 6vw;
+  transform: translate3d(9vw, -33vh, 0);
 }
 
 /* INTERESTS PAGE */
@@ -1941,6 +1994,187 @@ h3 {
     #franceLogo {
       width: 4.5vw;
       height: 1.7vh;
+    }
+
+    /* EXPERIENCE PAGE */
+
+    html[page="experience"] #title {
+      margin-top: 1vh;
+    }
+
+    .experienceBgImage {
+      min-height: 100%;
+      margin-left: -1.9vw;
+      margin-top: 3vh;
+    }
+
+    .experienceTitle {
+      left: 15%;
+      width: 70%;
+      border: 0.7vw solid white;
+    }
+
+    .experienceTitle span.border {
+      font-size: 10vw;
+    }
+
+    /* .experienceTable td {
+      border: 2px solid black;
+    } */
+
+    .experienceHeader {
+      width: 60vw;
+      padding: 3%;
+      font-size: 4vw;
+    }
+
+    .vl {
+      border-left: 1vw dotted black;
+      width: 0;
+      height: 40vh;
+      margin-bottom: 3vh;
+    }
+
+    .rightTableDiv {
+      /* border: 2px solid black; */
+      margin-left: -74vw;
+      width: 80vw;
+      font-size: 3vw;
+    }
+
+    .leftTableDiv {
+      /* border: 2px solid black; */
+      margin-left: 7vw;
+      width: 80vw;
+      font-size: 3vw;
+    }
+
+    .linkLabel {
+      font-size: 2.2vw;
+    }
+
+    #bmwDiv {
+      margin-top: -43vh;
+    }
+
+    #bmwvl {
+      margin-top: 43vh;
+    }
+
+    #bmwImg {
+      width: 48vw;
+      float: none;
+      margin-left: 16vw;
+    }
+
+    #iclDiv {
+      margin-top: -33vh;
+    }
+
+    #iclvl {
+      margin-top: 22vh;
+    }
+    
+    #iclImg {
+      width: 35vw;
+      margin-left: 21.5vw;
+    }
+
+    #ouDiv {
+      margin-top: -34vh;
+    }
+
+    #ouvl {
+      margin-top: 25vh;
+    }
+    
+    #ouImg {
+      width: 16vw;
+      float: right;
+    }
+
+    #ptDiv {
+      margin-top: -29vh;
+    }
+
+    #ptvl {
+      margin-top: 15vh;
+    }
+
+    #cfDiv {
+      margin-top: -38vh;
+    }
+
+    #cfvl {
+      margin-top: 32vh;
+    }
+    
+    #cfImg {
+      width: 16vw; 
+      float: none;
+      margin-left: -52vw;
+    }
+
+    #ncscImg {
+      width: 35vw;
+      float: none;
+      margin-left: 31vw;
+      transform: translate3d(0, -2vh, 0);
+    }
+
+    #ukmtDiv {
+      margin-top: -43vh;
+    }
+
+    #ukmtvl {
+      margin-top: 42vh;
+    }
+    
+    #ukmtImg {
+      width: 38vw;
+      margin-left: 21vw;
+    }
+
+    #hysDiv {
+      margin-top: -34vh;
+    }
+
+    #hysvl {
+      margin-top: 25vh;
+    }
+    
+    #hysImg {
+      width: 33vw;
+      float: none;
+      margin-left: 23vw;
+    }
+
+    #educationTable {
+      margin-top: -15vh;
+    }
+
+    #kclvl {
+      margin-top: 12vh;
+    }
+    
+    #kclImg {
+      width: 20vw; 
+      transform: translate3d(30vw, -23vh, 0);
+    }
+
+    #shsbvl {
+      margin-top: 18vh;
+    }
+    
+    #shsbImg {
+      width: 16vw;
+      transform: translate3d(32vw, -26vh, 0);
+    }
+
+    html[page="experience"] .footer {
+      margin-top: 20vh;
+      margin-left: -0.8vh;
+      height: 27%;
     }
   }
 }

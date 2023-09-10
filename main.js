@@ -55,24 +55,6 @@ const showMoreButton = document.querySelector('.showMoreButton');
 const text = document.querySelector('.profileSummaryContent');
 const retract = document.querySelector('.fade');
 
-// showMoreButton.addEventListener('click', (e)=>{
-//     let visible = text.querySelector('.moreText');
-//     text.classList.toggle('showMore');
-//     retract.classList.toggle('retract');
-//     if(showMoreButton.value == "Show More >"){
-//         showMoreButton.value = "Show Less >";
-//     }
-//     else if(showMoreButton.value == "Voir Plus >"){
-//       showMoreButton.value = "Voir Moins >";
-//     }
-//     else if(showMoreButton.value == "Show Less >"){
-//         showMoreButton.value= "Show More >";
-//     }
-//     else if(showMoreButton.value == "Voir Moins >"){
-//       showMoreButton.value= "Voir Plus >";
-//   }
-// })
-
 function showMore(){
   let visible = text.querySelector('.moreText');
   text.classList.toggle('showMore');
