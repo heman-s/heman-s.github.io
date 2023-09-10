@@ -2173,6 +2173,90 @@ h3 {
       margin-left: -0.8vh;
       height: 27%;
     }
+
+    /* INTERESTS PAGE */
+
+    html[page="interests"] #header {
+      padding-bottom: 5.5vh;
+      background-color: #1a1e22;
+    }
+
+    html[page="interests"] #title {
+      margin-top: 0vh;
+    }
+
+    .bgimg-1 {
+      background-size: 200% 80%;
+      margin-top: -9vh;
+      margin-left: -1.9vw;
+    }
+
+    .caption {
+      left: 25%;
+      width: 50%;
+      border: 0.7vw solid white;
+    }
+
+    .caption span.border {
+      font-size: 15vw;
+    }
+
+    .bgimg-2 {
+      background-image: url("./assets/nba2.jpg");
+      margin-left: -1.9vw;
+      background-size: 200% 100%;
+    }
+
+    .bgimg-3 {
+      background-image: url("./assets/guitar3.jpg");
+      min-height: 45vh;
+      margin-left: -1.9vw;
+    }
+
+    .bgimg-4 {
+      background-image: url("./assets/guitar1.jpg");
+      min-height: 60vh;
+      margin-left: -1.9vw;
+      background-size: 300% 100%;
+    }
+
+    .bgimg-5 {
+      background-image: url("./assets/art1.jpg");
+      min-height: 100vh;
+      opacity: 0.9;
+      margin-left: -1.9vw;
+      background-size: 200% 100%;
+    }
+
+    html[page="interests"] h3 {
+      letter-spacing: 0.25vw;
+      text-transform: uppercase;
+      font: 4vw "Lato", sans-serif;
+    }
+
+    html[page="interests"] p {
+      font-size: 3.2vw;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+      }
+    }
+
+    .section1 {
+      padding: 2vw 4.76vw;
+      width: 90.5vw;
+      transform: translate3d(0, 0, 0);
+      margin-left: -1.9vw;
+    }
+
+    html[page="interests"] .footer {
+      margin-top: -4vh;
+      margin-left: -0.8vh;
+      height: 27%;
+    }
   }
 }
 
