@@ -2204,20 +2204,20 @@ h3 {
 
     .bgimg-2 {
       background-image: url("./assets/nba2.jpg");
-      margin-left: -1.9vw;
+      margin-left: -1.98vw;
       /* background-size: 200vw 100vh; */
     }
 
     .bgimg-3 {
       background-image: url("./assets/guitar3.jpg");
       min-height: 45vh;
-      margin-left: -1.9vw;
+      margin-left: -1.98vw;
     }
 
     .bgimg-4 {
       background-image: url("./assets/guitar1.jpg");
       min-height: 60vh;
-      margin-left: -1.9vw;
+      margin-left: -1.98vw;
       /* background-size: 300vw 100vh; */
     }
 
@@ -2225,7 +2225,7 @@ h3 {
       background-image: url("./assets/art1.jpg");
       min-height: 100vh;
       opacity: 0.9;
-      margin-left: -1.9vw;
+      margin-left: -1.98vw;
       /* background-size: 200vw 100vh; */
     }
 
@@ -2250,7 +2250,7 @@ h3 {
       padding: 2vw 4.76vw;
       width: 90.5vw;
       transform: translate3d(0, 0, 0);
-      margin-left: -1.9vw;
+      margin-left: -1.98vw;
     }
 
     html[page="interests"] .footer {
