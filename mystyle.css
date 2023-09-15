@@ -2206,6 +2206,7 @@ h3 {
       background-image: url("./assets/nba2.jpg");
       margin-left: -1.9vw;
       background-size: 200vw 100vh;
+      background-position: top;
     }
 
     .bgimg-3 {
@@ -2219,6 +2220,7 @@ h3 {
       min-height: 60vh;
       margin-left: -1.9vw;
       background-size: 300vw 100vh;
+      background-position: top;
     }
 
     .bgimg-5 {
@@ -2227,6 +2229,7 @@ h3 {
       opacity: 0.9;
       margin-left: -1.9vw;
       background-size: 200vw 100vh;
+      background-position: top;
     }
 
     html[page="interests"] h3 {
