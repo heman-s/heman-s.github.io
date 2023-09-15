@@ -2186,9 +2186,11 @@ h3 {
     }
 
     .bgimg-1 {
-      background-size: 200% 80%;
-      margin-top: -9vh;
-      margin-left: -1.9vw;
+      background-size: 200% 100%;
+      /* margin-top: -9vh; */
+      /* top: -9vh; */
+      /* margin-left: -1.9vw; */
+      left: -1.45vw;
     }
 
     .caption {
