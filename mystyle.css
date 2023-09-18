@@ -1113,6 +1113,10 @@ input[type=text], #message {
   font-size: 1.2vw;
 }
 
+textarea#message {
+  font: 1.3vw "Lato", sans-serif;
+}
+
 #submitButton {
   width: 12%;
   height: 6%;
