@@ -268,6 +268,10 @@ html[page="interests"] .sticky {
   margin-right: 1.5vw;
 }
 
+html[page="experience"] .menuButtons {
+  margin-right: 1.8vw;
+}
+
 .menu {
   float: right;
   font: 1.5vw "Lato", sans-serif;
