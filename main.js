@@ -14,34 +14,34 @@ function stickyHeader() {
 }
 
 // DARK MODE
-var checkbox = document.querySelector("input[name=darkModeButton]");
+// var checkbox = document.querySelector("input[name=darkModeButton]");
 
-    checkbox.addEventListener("change", function () {
-    localStorage.setItem("theme", this.checked);
-    trans()
-    if (this.checked) {
-        document.documentElement.setAttribute("theme", "dark");
-    } else {
-         document.documentElement.setAttribute("theme", "light");
-    }
-});
+//     checkbox.addEventListener("change", function () {
+//     localStorage.setItem("theme", this.checked);
+//     trans()
+//     if (this.checked) {
+//         document.documentElement.setAttribute("theme", "dark");
+//     } else {
+//          document.documentElement.setAttribute("theme", "light");
+//     }
+// });
 
-let trans = () => {
-    document.documentElement.classList.add("transition");
-    window.setTimeout(() => {
-        document.documentElement.classList.remove("transition");
-    }, 1000)
-};
+// let trans = () => {
+//     document.documentElement.classList.add("transition");
+//     window.setTimeout(() => {
+//         document.documentElement.classList.remove("transition");
+//     }, 1000)
+// };
 
-if (localStorage.getItem("theme") == "false") {
-  document.documentElement.setAttribute("theme", "light");
-  var check = document.getElementById("darkModeButton");
-}
-else {
-  document.documentElement.setAttribute("theme", "dark");
-  var check = document.getElementById("darkModeButton");
-  check.setAttribute("checked", "checked");
-}
+// if (localStorage.getItem("theme") == "false") {
+//   document.documentElement.setAttribute("theme", "light");
+//   var check = document.getElementById("darkModeButton");
+// }
+// else {
+//   document.documentElement.setAttribute("theme", "dark");
+//   var check = document.getElementById("darkModeButton");
+//   check.setAttribute("checked", "checked");
+// }
 
 // MENU BUTTONS
 function myProjects(){
