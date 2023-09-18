@@ -194,7 +194,7 @@ html[theme="dark"] body {
 
 /* HEADER */
 
-table#headerTable, th, td {
+#headerTable, th, td {
   width: 60%;
   border-collapse: collapse;
   margin-left: 0.5vw;
@@ -240,7 +240,7 @@ html[page="interests"] .sticky {
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   color: var(--text);
   padding-left: 1vw;
-  margin-top: -5vh;
+  margin-top: -6vh;
   transition: 2s;
 }
 
@@ -1261,7 +1261,7 @@ html[theme="dark"] .dropdown a:hover {
 /* EXPERIENCE PAGE */
 
 html[page="experience"] #title {
-  margin-top: 0vh;
+  margin-top: 2vh;
 }
 
 .experienceBgImage {
@@ -1418,7 +1418,7 @@ html[page="experience"] #title {
 
 /* INTERESTS PAGE */
 html[page="interests"] #title {
-  margin-top: 0vh;
+  margin-top: 2vh;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
