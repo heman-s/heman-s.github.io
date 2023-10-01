@@ -2205,7 +2205,6 @@ h3 {
     .bgimg-2 {
       background-image: url("./assets/nba2.jpg");
       margin-left: -1.98vw;
-      margin-top: -10vw;
       /* background-size: 200vw 100vh; */
     }
 
@@ -2241,11 +2240,10 @@ h3 {
     }
 
     /* Turn off parallax scrolling for tablets and phones */
-    /* @media only screen and (max-device-width: 1024px) {
-      .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-      }
-    } */
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+      background-attachment: scroll;
+    }
+    
 
     .section1 {
       padding: 2vw 4.76vw;
