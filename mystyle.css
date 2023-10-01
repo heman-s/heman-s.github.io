@@ -2186,8 +2186,8 @@ h3 {
     }
 
     .bgimg-1 {
-      background-size: 200vw 100vh;
-      /* min-height: 108vh; */
+      background-size: 250vw 108vh;
+      min-height: 108vh;
       left: -1.45vw;
       background-position: top;
     }
@@ -2226,7 +2226,7 @@ h3 {
       min-height: 100vh;
       opacity: 0.9;
       margin-left: -1.98vw;
-      background-size: 200vw 100vh;
+      background-size: 200vw 105vh;
     }
 
     html[page="interests"] h3 {
