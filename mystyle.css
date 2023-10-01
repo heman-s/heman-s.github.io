@@ -1522,7 +1522,7 @@ h3 {
     table#headerTable, th#headerTable, td#headerTable {
       margin-left: -6vw;
       width: 51%; 
-      transform: translateY(-2vh);
+      /* transform: translateY(-0vh); */
     }
 
     #title {
@@ -1665,7 +1665,7 @@ h3 {
       position: fixed;
       display: none;
       width: 100vw;
-      height: 88vh;
+      height: 90vh;
       left: 0;
       right: 0;
       bottom: 0;
@@ -2006,10 +2006,6 @@ h3 {
 
     /* EXPERIENCE PAGE */
 
-    html[page="experience"] #title {
-      margin-top: 1vh;
-    }
-
     .experienceBgImage {
       min-height: 100%;
       margin-left: -1.9vw;
@@ -2187,10 +2183,6 @@ h3 {
     html[page="interests"] #header {
       padding-bottom: 5.5vh;
       background-color: #1a1e22;
-    }
-
-    html[page="interests"] #title {
-      margin-top: 0vh;
     }
 
     .bgimg-1 {
