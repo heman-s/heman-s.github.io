@@ -404,7 +404,7 @@ html[theme="dark"] .fade {
   background-color: inherit;
   color: dodgerblue;
   font-size: 1.5vw;
-  margin-top: 4.8vh;
+  margin-top: 0vh;
   cursor: pointer;
 }
 
@@ -1319,6 +1319,31 @@ html[page="experience"] #title {
   width: 100%;
 }
 
+#coursesTable {
+  margin-top: 44vh;
+}
+
+#educationTable {
+  margin-top: 0vh;
+}
+
+.coursesTitle {
+  position: absolute;
+  left: 27.5%;
+  width: 45%;
+  text-align: center;
+  margin-top: 5vh;
+  border: 0.3vw solid black;
+}
+
+.coursesTitle span.border {
+  font-family: Geneva, Verdana, Tahoma, sans-serif;
+  color: black;
+  padding: 1.5vw;
+  font-size: 6vw;
+  letter-spacing: 0.2vw;
+}
+
 .educationTitle {
   position: absolute;
   left: 32.5%;
@@ -1379,8 +1404,25 @@ html[page="experience"] #title {
   font-size: 0.9vw;
 }
 
+#bmwvl {
+  height: 89vh;
+}
+
 #bmwImg {
   width: 15vw;
+  float: right;
+}
+
+#uopImg {
+  width: 14vw;
+}
+
+#huImg-left {
+  width: 14vw;
+}
+
+#huImg-right {
+  width: 14vw;
   float: right;
 }
 
@@ -1665,7 +1707,7 @@ h3 {
       position: fixed;
       display: none;
       width: 100vw;
-      height: 90vh;
+      height: 90dvh;
       left: 0;
       right: 0;
       bottom: 0;
@@ -2028,22 +2070,33 @@ h3 {
       font-size: 4vw;
     }
 
+    #coursesTitle {
+      margin-top: 5vh;
+    }
+
+    #coursesTable {
+      margin-top: -15vh;
+    }
+
+    #educationTable {
+      margin-top: -15vh;
+    }
+
     .vl {
-      border-left: 2vw dotted black;
-      width: 0;
+      border-color: black;
+      border-width: 2vw 0px 0px 10px;
+      border-style: none none none dotted;
       height: 40vh;
-      margin-bottom: 3vh;
+      width: 2vw;
     }
 
     .rightTableDiv {
-      /* border: 2px solid black; */
       margin-left: -74vw;
       width: 80vw;
       font-size: 3vw;
     }
 
     .leftTableDiv {
-      /* border: 2px solid black; */
       margin-left: 7vw;
       width: 80vw;
       font-size: 3vw;
@@ -2055,17 +2108,70 @@ h3 {
     }
 
     #bmwDiv {
-      margin-top: -43vh;
+      margin-top: -42vh;
     }
 
     #bmwvl {
-      margin-top: 43vh;
+      height: 40vh;
+      margin-top: 87vh;
     }
 
     #bmwImg {
       width: 48vw;
       float: none;
       margin-left: 16vw;
+    }
+
+    #uopHeader {
+      transform: translate3d(0, 33vh, 0);
+    }
+
+    #uopDiv {
+      margin-top: -15vh;
+    }
+
+    #uopImg {
+      width: 32vw;
+      margin-left: 23vw;
+      margin-top: 0.5vh;
+    }
+
+    #uopvl {
+      margin-top: 58vh;
+    }
+
+    #huImg-left {
+      width: 35vw;
+      margin-left: 21.5vw;
+    }
+    
+    #huImg-right {
+      width: 35vw;
+      margin-right: 21.5vw;
+    }
+
+    #hu1Div {
+      margin-top: -29vh;
+    }
+
+    #hu1vl {
+      margin-top: 18vh;
+    }
+
+    #hu2Div {
+      margin-top: -29vh;
+    }
+
+    #hu2vl {
+      margin-top: 18vh;
+    }
+
+    #hu3Div {
+      margin-top: -29vh;
+    }
+
+    #hu3vl {
+      margin-top: 18vh;
     }
 
     #iclDiv {
@@ -2092,6 +2198,14 @@ h3 {
     #ouImg {
       width: 16vw;
       float: right;
+    }
+
+    #uocDiv {
+      margin-top: -29vh;
+    }
+
+    #uocvl {
+      margin-top: 18vh;
     }
 
     #ptDiv {
@@ -2148,10 +2262,6 @@ h3 {
       width: 33vw;
       float: none;
       margin-left: 23vw;
-    }
-
-    #educationTable {
-      margin-top: -15vh;
     }
 
     #kclvl {
