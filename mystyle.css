@@ -1114,7 +1114,7 @@ input[type=text], #message {
 }
 
 textarea#message {
-  font: 1.3vw "Lato", sans-serif;
+  font: 1.2vw "Lato", sans-serif;
 }
 
 #submitButton {
@@ -1325,6 +1325,7 @@ html[page="experience"] #title {
 
 #educationTable {
   margin-top: 0vh;
+  transform: translate3d(0, 25vh, 0);
 }
 
 .coursesTitle {
@@ -1985,6 +1986,10 @@ h3 {
       width: 70%;
     }
 
+    textarea#message {
+      font: 3vw "Lato", sans-serif;
+    }
+
     #submitButton {
       width: 40%;
       height: 6%;
@@ -2079,7 +2084,7 @@ h3 {
     }
 
     #educationTable {
-      margin-top: -15vh;
+      margin-top: -20vh;
     }
 
     .vl {
@@ -2109,119 +2114,137 @@ h3 {
 
     #bmwDiv {
       margin-top: -42vh;
+      text-align: center;
     }
 
     #bmwvl {
       height: 40vh;
-      margin-top: 87vh;
+      margin-top: 85vh;
+      margin-bottom: 3vh;
     }
 
     #bmwImg {
       width: 48vw;
-      float: none;
-      margin-left: 16vw;
+      margin-right: 15vw;
+      margin-top: -2vh;
     }
 
     #uopHeader {
-      transform: translate3d(0, 33vh, 0);
+      padding-top: 34vh;
     }
 
     #uopDiv {
-      margin-top: -15vh;
+      margin-top: -33vh;
+      text-align: center;
     }
 
     #uopImg {
       width: 32vw;
-      margin-left: 23vw;
       margin-top: 0.5vh;
     }
 
     #uopvl {
-      margin-top: 58vh;
+      margin-top: 25vh;
+      margin-bottom: 3vh;
     }
 
     #huImg-left {
       width: 35vw;
-      margin-left: 21.5vw;
     }
     
     #huImg-right {
       width: 35vw;
-      margin-right: 21.5vw;
+      margin-right: 23vw;
     }
 
     #hu1Div {
       margin-top: -29vh;
+      text-align: center;
     }
 
     #hu1vl {
-      margin-top: 18vh;
+      margin-top: 17vh;
+      margin-bottom: 3vh;
     }
 
     #hu2Div {
       margin-top: -29vh;
+      text-align: center;
     }
 
     #hu2vl {
       margin-top: 18vh;
+      margin-bottom: 3vh;
     }
 
     #hu3Div {
       margin-top: -29vh;
+      text-align: center;
     }
 
     #hu3vl {
       margin-top: 18vh;
+      margin-bottom: 3vh;
     }
 
     #iclDiv {
       margin-top: -33vh;
+      text-align: center;
     }
 
     #iclvl {
       margin-top: 22vh;
+      margin-bottom: 3vh;
     }
     
     #iclImg {
       width: 35vw;
-      margin-left: 21.5vw;
     }
 
     #ouDiv {
       margin-top: -34vh;
+      text-align: center;
     }
 
     #ouvl {
       margin-top: 25vh;
+      margin-bottom: 3vh;
     }
     
     #ouImg {
       width: 16vw;
       float: right;
+      margin-right: 5vw;
     }
 
     #uocDiv {
       margin-top: -29vh;
+      text-align: center;
     }
 
     #uocvl {
       margin-top: 18vh;
+      margin-bottom: 3vh;
     }
 
     #ptDiv {
-      margin-top: -29vh;
+      margin-top: -25vh;
+      text-align: center;
     }
 
     #ptvl {
       margin-top: 15vh;
+      margin-bottom: -5vh;
     }
 
     #cfDiv {
       margin-top: -38vh;
+      text-align: center;
     }
 
     #cfvl {
       margin-top: 32vh;
+      margin-bottom: 3vh;
     }
     
     #cfImg {
@@ -2233,44 +2256,51 @@ h3 {
     #ncscImg {
       width: 35vw;
       float: none;
-      margin-left: 31vw;
+      margin-left: -12vw;
       transform: translate3d(0, -2vh, 0);
     }
 
     #ukmtDiv {
-      margin-top: -43vh;
+      margin-top: -46vh;
+      text-align: center;
     }
 
     #ukmtvl {
       margin-top: 42vh;
+      margin-bottom: 3vh;
     }
     
     #ukmtImg {
       width: 38vw;
-      margin-left: 21vw;
     }
 
     #hysDiv {
-      margin-top: -34vh;
+      margin-top: -29vh;
+      text-align: center;
     }
 
     #hysvl {
       margin-top: 25vh;
+      margin-bottom: -6vh;
     }
     
     #hysImg {
       width: 33vw;
       float: none;
-      margin-left: 23vw;
+    }
+
+    #kclHeader {
+      padding-bottom: 3vh;
     }
 
     #kclvl {
       margin-top: 12vh;
+      margin-bottom: 3vh;
     }
     
     #kclImg {
       width: 20vw; 
-      transform: translate3d(30vw, -23vh, 0);
+      transform: translate3d(30vw, -24vh, 0);
     }
 
     #shsbvl {
@@ -2279,7 +2309,7 @@ h3 {
     
     #shsbImg {
       width: 16vw;
-      transform: translate3d(32vw, -26vh, 0);
+      transform: translate3d(32vw, -24vh, 0);
     }
 
     html[page="experience"] .footer {
