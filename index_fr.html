@@ -2,6 +2,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Accueil</title>
+  <link rel="icon" href="./assets/favicon.ico">
   <link href="mystyle.css" rel="stylesheet">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script src="email.js"></script>
@@ -20,7 +21,7 @@
     </tr>
 
     <!-- Menu for Mobile -->
-    <div class="mobileMenu">
+    <div class="mobileMenu animated animatedFadeInUp fadeInLeft"">
       <div id="menuToggle">
         <input type="checkbox" onclick="mobileMenu()"/>
           <span></span>
@@ -36,7 +37,7 @@
       <li class="menu animated animatedFadeInUp fadeInLeft" style="animation-delay: 2.5s"><a onclick="myProjects()">Mes Projets</a></li>
       <li class="menu animated animatedFadeInUp fadeInLeft" style="animation-delay: 3s"><a href="index_fr.html">Accueil</a></li>
     </div>
-      <!-- <input id="darkModeButton" name="darkModeButton" class="toggle" type="checkbox">
+    <!-- <input id="darkModeButton" name="darkModeButton" class="toggle" type="checkbox">
     <label for="darkModeButton" class="sr">Dark Mode</label> -->
   </table>
 </ul>
@@ -49,19 +50,19 @@
 </div>
 
 <!-- PROFILE SUMMARY -->
-<table id="profileSummary" style="width:70vw">
+<table id="profileSummary">
   <tr>
     <th id="profileSummaryHeader">
-      <span class="fadeIn" style="animation-delay: 3s">Salut,</span> <span class="fadeIn" style="animation-delay: 3s">Je</span> <span class="fadeIn" style="animation-delay: 3s">Suis</span> <span class="fadeIn" style="animation-delay: 3s">Heman.</span>
+      <span class="fadeIn" id="fadeIn">Salut,</span> <span class="fadeIn" id="fadeIn">Je</span> <span class="fadeIn" id="fadeIn">Suis</span> <span class="fadeIn" id="fadeIn">Heman.</span>
     </th>
   </tr>
   <tr>
     <td>
-      <img src="./assets/me2.jpg" class="me animated animatedFadeInUp fadeInUp" style="animation-delay: 4s">
+      <img src="./assets/me2.jpg" class="me animated animatedFadeInUp fadeInUp">
     </td>
   </tr>
   <tr>
-    <td class="profileSummaryContent animated animatedFadeInUp fadeInUp" style="animation-delay: 4.5s">
+    <td class="profileSummaryContent animated animatedFadeInUp fadeInUp">
       Je suis actuellement étudiant en deuxième année d'informatique à la faculté de King's College London.<br><br>
       
       Je me caractérise, entre autres, par mon ardeur et ma ténacité. Je suis une personne vigoureuse qui

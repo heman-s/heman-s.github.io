@@ -431,6 +431,7 @@ html[theme="dark"] .profileSummaryContent.showMore .fade {
 .profileSummaryContent.showMore .moreText {
   height: 24vh;
   opacity: 1;
+  margin-bottom: -7vh;
 }
 
 /* PROJECT SLIDESHOW */
@@ -931,7 +932,7 @@ html[theme="dark"] .manual-btn {
   width: 6vw;
   height: 11vh;
   color: var(--text);
-  transform: translate3d(40.5vw, -64.6vh, 0);
+  transform: translate3d(40.5vw, -63vh, 0);
 }
 
 #repository:hover {
@@ -951,19 +952,20 @@ html[theme="dark"] #repository:hover {
 }
 
 #report1 {
-  transform: translate3d(41vw, -61vh, 0);
+  margin-left: 41vw;
+  margin-top: -60vh;
 }
 
 #report2 {
-  transform: translate3d(41vw, -66vh, 0);
+  transform: translate3d(41vw, -61vh, 0);
 }
 
 #report3 {
-  transform: translate3d(33vw, -53vh, 0);
+  transform: translate3d(33vw, -51.4vh, 0);
 }
 
 #report4 {
-  transform: translate3d(41vw, -56vh, 0);
+  transform: translate3d(41vw, -57vh, 0);
 }
 
 #reportLabel {
@@ -1760,7 +1762,7 @@ h3 {
 
     .showMoreButton { 
       font-size: 4vw;
-      margin-top: 2vh;
+      margin-top: 0vh;
     }
 
     #showMoreButton {
@@ -1796,6 +1798,7 @@ h3 {
     .profileSummaryContent.showMore .moreText {
       height: 34vh;
       opacity: 1;
+      margin-bottom: -10vh;
     }
 
     .slider {
@@ -1879,11 +1882,13 @@ h3 {
     }
     
     #report1 {
-      transform: translate3d(57vw, -5.5vh, 0);
+      margin-top: -5vh;
+      margin-left: 57vw;
     }
     
     #report2 {
-      transform: translate3d(57vw, -7.6vh, 0);
+      margin-top: 56vh;
+      margin-left: 16vw;
     }
     
     #report3 {
@@ -1891,7 +1896,8 @@ h3 {
     }
     
     #report4 {
-      transform: translate3d(57vw, -0.8vh, 0);
+      margin-top: 54.5vh;
+      margin-left: 16vw;
     }
 
     #reportLabel {
@@ -2326,7 +2332,7 @@ h3 {
     }
 
     .bgimg-1 {
-      background-size: 250vw 108vh;
+      background-size: 280vw 108vh;
       min-height: 108vh;
       left: -1.45vw;
       background-position: top;

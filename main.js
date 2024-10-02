@@ -48,6 +48,12 @@ function myProjects(){
   var slideshow = document.getElementById("slideshow");
   document.documentElement.scrollTop = slideshow.offsetTop;
   document.body.scrollTop = slideshow.offsetTop-107;
+  if (document.getElementById("menuCheckbox").checked == true) {
+    if (document.getElementById("menu").style.display == "block") {
+      document.getElementById("menu").style.display = "none";
+    }
+    document.getElementById("menuCheckbox").checked = false;
+  }
 }
 
 // SHOW MORE BUTTON
