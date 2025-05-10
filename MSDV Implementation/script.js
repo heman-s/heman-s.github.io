@@ -58,6 +58,7 @@ async function loadCrimeData() {
             }).then(data => data.filter(d => d !== null))
         ));
     
+    console.log("allCrimeData", allCrimeData.flat());
     return allCrimeData.flat();
 }
 
@@ -124,6 +125,7 @@ async function loadMHData(boroughs) {
             }).then(data => data.filter(d => d !== null))
         ));
 
+    console.log("allMHData", allMHData.flat());
     return allMHData.flat();
 }
 
@@ -920,7 +922,7 @@ function createMHBarChart(MHData) {
 
 loadData().then(data => {
     console.log(data);
-    
+
     const { boroughs, crimeData, MHData, topology } = data;
     const { offences, dataYears } = processData(boroughs, crimeData, MHData);
 
