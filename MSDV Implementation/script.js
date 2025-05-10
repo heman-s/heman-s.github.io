@@ -919,12 +919,11 @@ function createMHBarChart(MHData) {
 }
 
 loadData().then(data => {
+    console.log(data);
+    
     const { boroughs, crimeData, MHData, topology } = data;
     const { offences, dataYears } = processData(boroughs, crimeData, MHData);
 
-    console.log("1");
     createMap(boroughs, crimeData, MHData, topology, dataYears);
-    console.log("2");
     createCrimeBarChart(crimeData);
-    console.log("3");
 });
