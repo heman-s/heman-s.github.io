@@ -107,11 +107,11 @@
       <input type="radio" name="radioButton" id="radio4">
 
       <div class="mySlides first" id="slide1">
-        <img src="./assets/foodChainSimulator.png" style="width:65vw">
+        <img src="./assets/propertyApp.png" style="width:65vw">
       </div>
 
       <div class="mySlides" id="slide2">
-        <img src="./assets/propertyViewer.png" style="width:65vw">
+        <img src="./assets/foodChainSimulator.png" style="width:65vw">
       </div>
 
       <div class="mySlides" id="slide3">
@@ -156,13 +156,36 @@
 <!-- POPUP OVERLAY FOR FIND OUT MORE BUTTON -->
 <div id="overlay">
   <div class="animated animatedFadeInUp fadeInUp" id="popup">
+    <h3 class="popupHeader propertyApp">Optimising Architectural Space:<br>A Reinforcement Learning Approach<br>for Cost-Effective, Compliance-Aware<br>Floor Plan Design from a Real Estate Perspective</h3>
     <h3 class="popupHeader foodChainSimulator">Food Chain Simulator</h3>
-    <h3 class="popupHeader propertyViewer">Property Viewer</h3>
     <h3 class="popupHeader quiz">Quiz Application</h3>
     <h3 class="popupHeader zuul">World of Zuul</h3>
     <h3 id="popupSubsidiary">Personal Project</h3>
     <input type="button" value="X" id="xButton" onclick="off()"/>
     <div id="popupLine"></div>
+
+    <div class="popupDescription propertyApp">
+      <h3 class="descHeader">Description:</h3>
+      <p>
+        This property management web application facilitates concise real-estate management (properties, rooms, 
+        occupants, statical analysis of cash flow, licenses, mortgages, prospective work, legal regulations), 
+        with a focus on using reinforcement learning (Proximal Policy Optimisation) in the context of floor plan design.
+        It makes use of a reinforcement learning model with the aim of maximising space whilst minimising costs and 
+        adhering to relevant legal compliance and regulations within existing floor plans to maximise potential rental income.
+        <br><br>
+        Original Authors: Heman Seegolam
+      </p>
+      <img class="descImagePython" src="./assets/python.png" style="margin-top: -12vh;">
+      <img class="descImageSQL" src="./assets/sql.png" style="margin-top: -12vh;">
+      <img class="descImageReact" src="./assets/react.jpg" style="margin-top: -12vh; margin-left: 1vw;">
+      <img class="descImagePyTorch" src="./assets/pytorch.png" style="margin-top: -12vh;">
+      <a href="./assets/Property App Report.pdf" target="_blank">
+        <div class="report" id="report1">
+          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
+          <p id="reportLabel">Report</p>
+        </div>
+      </a>
+    </div>
 
     <div class="popupDescription foodChainSimulator">
       <h3 class="descHeader">Description:</h3>
@@ -177,30 +200,6 @@
       </p>
       <img class="descImageJava" src="./assets/java.png" style="margin-top: 3vh;">
       <a href="./assets/Food Chain Simulation Report.pdf" target="_blank" style="white-space: nowrap;">
-        <div class="report" id="report1">
-          <img src="./assets/externalLink.png" id="reportExternalLink"></img>
-          <p id="reportLabel">Report</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="popupDescription propertyViewer">
-      <h3 class="descHeader">Description:</h3>
-      <p>
-        The property viewer application features four distinct panels, each offering insights into the London 
-        property market. Users can select a preferred price range using a range slider (or default settings) to 
-        filter and view properties on a map that highlights boroughs and available listings. A statistics panel 
-        provides detailed information on properties within the selected price range, while a favorites panel 
-        displays properties the user has marked as favorites. The GUI includes several additional features, such 
-        as a menubar, an overall price calculator, a property selection scroll pane, and the ability to display 
-        property locations using OpenStreetMap. It also offers a search bar for filtering properties by specific 
-        criteria, a dark mode/light mode toggle, and integration with a weather API.<br><br>Original Authors: 
-        David J. Barnes, Michael Kölling<br>Contributors: Heman Seegolam, 
-        <a href="https://bhavik-gilbert.github.io" target="_blank" class="tooltip" style="white-space: nowrap;">Bhavik Gilbert<span class="tooltiptext">Go to website</span></a>
-        , Nina Peire, Lavish Kumar
-      </p>
-      <img class="descImageJava" src="./assets/java.png" style="margin-top: -0.5vh;">
-      <a href="./assets/Property Viewer Report.pdf" target="_blank">
         <div class="report" id="report2">
           <img src="./assets/externalLink.png" id="reportExternalLink"></img>
           <p id="reportLabel">Report</p>
